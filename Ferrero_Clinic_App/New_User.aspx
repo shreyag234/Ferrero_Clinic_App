@@ -25,20 +25,24 @@
             <tr>
                 <td>&nbsp;</td>
                 <td>
-                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Username_lb" runat="server" Text="Username :"></asp:Label>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Label ID="Password_LB1" runat="server" Text="Password :"></asp:Label>
+                </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Label ID="Password_LB2" runat="server" Text="Re-enter Password :"></asp:Label>
+                </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
