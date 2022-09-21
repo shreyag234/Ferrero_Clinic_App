@@ -42,6 +42,15 @@ namespace Ferrero_Clinic_App
         protected global::System.Web.UI.WebControls.Label Username_LB1;
 
         /// <summary>
+        /// Username_tn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Username_tn;
+
+        /// <summary>
         /// Password_LB2 control.
         /// </summary>
         /// <remarks>
@@ -49,5 +58,23 @@ namespace Ferrero_Clinic_App
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Password_LB2;
+
+        /// <summary>
+        /// Password_tb control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Password_tb;
+
+        /// <summary>
+        /// Login_BTN control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Login_BTN;
     }
 }
