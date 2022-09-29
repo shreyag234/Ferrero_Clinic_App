@@ -69,10 +69,6 @@
   <ItemGroup>
     <Content Include="Add_Patient.aspx" />
     <Content Include="Admin_Login.aspx" />
-    <Content Include="App_Data\Ferrero_DB.mdf" />
-    <Content Include="App_Data\Ferrero_DB_log.ldf">
-      <DependentUpon>Ferrero_DB.mdf</DependentUpon>
-    </Content>
     <Content Include="DC_Dash_Board.aspx" />
     <Content Include="index.aspx" />
     <Content Include="New_User.aspx" />
@@ -124,6 +120,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
