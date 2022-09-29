@@ -68,6 +68,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin_Login.aspx" />
+    <Content Include="App_Data\Ferrero_DB.mdf" />
+    <Content Include="App_Data\Ferrero_DB_log.ldf">
+      <DependentUpon>Ferrero_DB.mdf</DependentUpon>
+    </Content>
+    <Content Include="DC_Dash_Board.aspx" />
     <Content Include="index.aspx" />
     <Content Include="New_User.aspx" />
     <Content Include="Web.config" />
@@ -79,6 +84,13 @@
     </Compile>
     <Compile Include="Admin_Login.aspx.designer.cs">
       <DependentUpon>Admin_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DC_Dash_Board.aspx.cs">
+      <DependentUpon>DC_Dash_Board.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DC_Dash_Board.aspx.designer.cs">
+      <DependentUpon>DC_Dash_Board.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
