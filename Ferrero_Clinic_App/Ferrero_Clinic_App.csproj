@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Add_Patient.aspx" />
     <Content Include="Admin_Login.aspx" />
     <Content Include="App_Data\Ferrero_DB.mdf" />
     <Content Include="App_Data\Ferrero_DB_log.ldf">
@@ -78,6 +79,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add_Patient.aspx.cs">
+      <DependentUpon>Add_Patient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add_Patient.aspx.designer.cs">
+      <DependentUpon>Add_Patient.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin_Login.aspx.cs">
       <DependentUpon>Admin_Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
