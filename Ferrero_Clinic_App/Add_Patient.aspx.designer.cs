@@ -312,6 +312,24 @@ namespace Ferrero_Clinic_App
         protected global::System.Web.UI.WebControls.TextBox SpouseName_tb;
 
         /// <summary>
+        /// Gender_LB0 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Gender_LB0;
+
+        /// <summary>
+        /// RadioButtonList1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList1;
+
+        /// <summary>
         /// EContact_LB control.
         /// </summary>
         /// <remarks>
