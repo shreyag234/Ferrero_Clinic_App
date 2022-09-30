@@ -72,9 +72,9 @@
   <ItemGroup>
     <Content Include="Add_Patient.aspx" />
     <Content Include="Admin_Login.aspx" />
-    <Content Include="App_Data\Ferrero_DB.mdf" />
-    <Content Include="App_Data\Ferrero_DB_log.ldf">
-      <DependentUpon>Ferrero_DB.mdf</DependentUpon>
+    <Content Include="App_Data\Ferrero_DBM.mdf" />
+    <Content Include="App_Data\Ferrero_DBM_log.ldf">
+      <DependentUpon>Ferrero_DBM.mdf</DependentUpon>
     </Content>
     <Content Include="DC_Dash_Board.aspx" />
     <Content Include="index.aspx" />
