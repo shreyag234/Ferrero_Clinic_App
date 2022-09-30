@@ -13,7 +13,10 @@
             width: 276px;
         }
         .auto-style3 {
-            width: 803px;
+            width: 248px;
+        }
+        .auto-style4 {
+            width: 190px;
         }
     </style>
 </head>
@@ -27,8 +30,8 @@
                 <td class="auto-style2">
                     <asp:Label ID="User_Type_LB" runat="server" Text="User Type :"></asp:Label>
                 </td>
-                <td>
-                    <asp:DropDownList ID="DropDownList1" runat="server">
+                <td class="auto-style4">
+                    <asp:DropDownList ID="User_Type_Selection_List01" runat="server">
                         <asp:ListItem>Administrator</asp:ListItem>
                         <asp:ListItem>Medical Staff</asp:ListItem>
                     </asp:DropDownList>
@@ -40,7 +43,9 @@
                 <td class="auto-style2">
                     <asp:Label ID="Username_lb" runat="server" Text="Username :"></asp:Label>
                 </td>
-                <td>&nbsp;</td>
+                <td class="auto-style4">
+                    <asp:TextBox ID="Username_Box01" runat="server"></asp:TextBox>
+                </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
@@ -48,7 +53,9 @@
                 <td class="auto-style2">
                     <asp:Label ID="Password_LB1" runat="server" Text="Password :"></asp:Label>
                 </td>
-                <td>&nbsp;</td>
+                <td class="auto-style4">
+                    <asp:TextBox ID="Password_Box01" runat="server" TextMode="Password"></asp:TextBox>
+                </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
@@ -56,7 +63,9 @@
                 <td class="auto-style2">
                     <asp:Label ID="Password_LB2" runat="server" Text="Re-enter Password :"></asp:Label>
                 </td>
-                <td>&nbsp;</td>
+                <td class="auto-style4">
+                    <asp:TextBox ID="Password_Box02" runat="server" TextMode="Password"></asp:TextBox>
+                </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
@@ -64,15 +73,15 @@
                 <td class="auto-style2">
                     <asp:Button ID="Back_BTN" runat="server" Text="Back" Width="202px" />
                 </td>
-                <td>
-                    <asp:Button ID="Add_BTN" runat="server" Text="Add" Width="173px" />
+                <td class="auto-style4">
+                    <asp:Button ID="Add_BTN" runat="server" Text="Add" Width="173px" OnClick="Add_BTN_Click" />
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style4">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
         </table>
