@@ -30,7 +30,22 @@ namespace Ferrero_Clinic_App
                 byte[] p2, hash2;
                 p2 = ASCIIEncoding.ASCII.GetBytes(Password_Box02.Text);
                 hash2 = new MD5CryptoServiceProvider().ComputeHash(p2);
+                bool check = false;
+                
                 if(hash1.Length == hash2.Length)
+                {
+                    int i = 0;
+                    while((i< hash1.Length) && (hash1[i] == hash2[i]))
+                    {
+                        i++;
+                    }
+                    if(i==hash1.Length)
+                    {
+                        check = true;
+                    }
+                    
+                }
+                if(check)
                 {
                     SqlCommand cmd = new SqlCommand("insert into [dbo].[Admin](Admin_Username, Password)values(@Admin_Username,@Password)", con);
                     cmd.Parameters.AddWithValue("@Admin_Username", Username_Box01.Text);
@@ -39,8 +54,14 @@ namespace Ferrero_Clinic_App
                     cmd.ExecuteNonQuery();
                     con.Close();
                 }
-
+                else
+                {
+                    matching_passwords_errorLB01.Visible = true;
+                    matching_passwords_errorLB02.Visible = true;
+                }
             }
         }
+
+
     }
 }
