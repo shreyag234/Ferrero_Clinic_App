@@ -78,6 +78,15 @@ namespace Ferrero_Clinic_App
         protected global::System.Web.UI.WebControls.TextBox Password_Box01;
 
         /// <summary>
+        /// matching_passwords_errorLB01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label matching_passwords_errorLB01;
+
+        /// <summary>
         /// Password_LB2 control.
         /// </summary>
         /// <remarks>
@@ -94,6 +103,15 @@ namespace Ferrero_Clinic_App
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Password_Box02;
+
+        /// <summary>
+        /// matching_passwords_errorLB02 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label matching_passwords_errorLB02;
 
         /// <summary>
         /// Back_BTN control.
