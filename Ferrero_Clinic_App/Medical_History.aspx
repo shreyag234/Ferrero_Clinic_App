@@ -18,7 +18,7 @@
         </div>
          <table style="margin-left:auto;margin-right:auto;" >
              <tr height="10dp"></tr>
-            <
+            
             <tr>
                 <td width="20dp">&nbsp;</td>
                 <td width="20dp"><asp:Label ID="LB_2" runat="server" Text="Previous medical problems:  " Font-Size="Larger" Width="300px"></asp:Label></td>
