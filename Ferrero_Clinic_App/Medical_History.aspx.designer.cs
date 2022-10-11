@@ -24,24 +24,6 @@ namespace Ferrero_Clinic_App
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// LB_1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LB_1;
-
-        /// <summary>
-        /// Reason_tb control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Reason_tb;
-
-        /// <summary>
         /// LB_2 control.
         /// </summary>
         /// <remarks>
@@ -58,24 +40,6 @@ namespace Ferrero_Clinic_App
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox PreviousProbs_tb;
-
-        /// <summary>
-        /// LB_3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LB_3;
-
-        /// <summary>
-        /// Date_cal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Date_cal;
 
         /// <summary>
         /// LB_4 control.
@@ -130,33 +94,6 @@ namespace Ferrero_Clinic_App
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Duration_tb;
-
-        /// <summary>
-        /// LB_7 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LB_7;
-
-        /// <summary>
-        /// Yes_rbn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton Yes_rbn;
-
-        /// <summary>
-        /// No_rbn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton No_rbn;
 
         /// <summary>
         /// LB_8 control.
@@ -319,33 +256,6 @@ namespace Ferrero_Clinic_App
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox SmokeYes_tb;
-
-        /// <summary>
-        /// Lb_16 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Lb_16;
-
-        /// <summary>
-        /// DrugsYes_rbn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton DrugsYes_rbn;
-
-        /// <summary>
-        /// DrugsNo_rbn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton DrugsNo_rbn;
 
         /// <summary>
         /// Lb_17 control.

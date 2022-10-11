@@ -78,6 +78,7 @@
     </Content>
     <Content Include="DC_Dash_Board.aspx" />
     <Content Include="index.aspx" />
+    <Content Include="Medical_History.aspx" />
     <Content Include="New_User.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -109,6 +110,13 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Medical_History.aspx.cs">
+      <DependentUpon>Medical_History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Medical_History.aspx.designer.cs">
+      <DependentUpon>Medical_History.aspx</DependentUpon>
     </Compile>
     <Compile Include="New_User.aspx.cs">
       <DependentUpon>New_User.aspx</DependentUpon>

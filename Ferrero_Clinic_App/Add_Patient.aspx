@@ -43,7 +43,7 @@
                 <td width="20dp"><asp:Label ID="Name_LB" runat="server" Text="Name: " Font-Size="Larger" ></asp:Label></td>
                 <td width="20dp"><asp:TextBox ID="Name_tb" runat="server"></asp:TextBox></td>
                 <td width="20dp"><asp:Label ID="Surname_LB" runat="server" Text="Surname: " Font-Size="Larger"></asp:Label></td>
-                <td width="20dp"><asp:TextBox ID="Surname_tb" runat="server" OnTextChanged="Surname_tb_TextChanged"></asp:TextBox></td>
+                <td width="20dp"><asp:TextBox ID="Surname_tb" runat="server" ></asp:TextBox></td>
                 <td class="auto-style1">&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td width="20dp"><asp:Label ID="Maiden_LB" runat="server" Text="Maiden: " Font-Size="Larger"></asp:Label></td>
@@ -55,7 +55,7 @@
             </tr>
             <tr>
                 <td width="20dp">&nbsp;</td>
-                <td width="20dp"><asp:Label ID="Address_LB" runat="server" Text="Address:  " Font-Size="Larger"></asp:Label></td>
+                <td width="20dp"><asp:Label ID="Address_LB" runat="server" Text="Street Address:  " Font-Size="Larger"></asp:Label></td>
                 <td width="20dp"><asp:TextBox ID="Address_tb" runat="server" width="280px"></asp:TextBox> </td>
                 <td width="20dp">
                     <asp:Label ID="City_LB" runat="server" Text="City: " Font-Size="Larger"></asp:Label></td>
@@ -74,7 +74,8 @@
             <tr>
                 <td width="20dp">&nbsp;</td>
                 <td width="20dp"><asp:Label ID="DOB_LB" runat="server" Text="DOB:  " Font-Size="Larger"></asp:Label></td>
-                <td width="20dp"><asp:TextBox ID="DOB_tb" runat="server"></asp:TextBox> </td>
+                <td width="20dp">
+                    <asp:Calendar ID="DOB_picker" runat="server" Margin="200,50,50,0"></asp:Calendar> </td>
                 <td width="20dp">
                     <asp:Label ID="Phone_LB" runat="server" Text="Phone: " Font-Size="Larger"></asp:Label></td>
                 <td width="20dp"><asp:TextBox ID="PhoneNum_tb" runat="server"></asp:TextBox></td>
@@ -168,7 +169,7 @@
             <tr>
                 <td widht="400dp" class="auto-style8"></td>
                 <td widht="400dp" class="auto-style7">
-                    <asp:Button ID="Next_btn" runat="server" Text="Next" Width="244px" Font-Bold="true" Font-Size="Larger" CssClass="auto-style5" /></td>
+                    <asp:Button ID="Next_btn" runat="server" Text="Next" Width="244px" Font-Bold="true" Font-Size="Larger" CssClass="auto-style5" OnClick="Next_btn_Click" /></td>
                 <td widht="400dp" class="auto-style4"></td>
             </tr>
         </table>

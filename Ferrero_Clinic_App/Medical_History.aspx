@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head runat="server">
     <title></title>
     <style> 
@@ -17,29 +18,18 @@
         </div>
          <table style="margin-left:auto;margin-right:auto;" >
              <tr height="10dp"></tr>
-            <tr height="30dp">
-
-                <td width="20dp">&nbsp; </td>
-                <td width="20dp"><asp:Label ID="LB_1" runat="server" Text="Reason for visit: " Font-Size="Larger" ></asp:Label></td>
-                <td width="20dp"><asp:TextBox ID="Reason_tb" runat="server" Width="400px"></asp:TextBox></td>
-                <td width="20dp"></td>
-                <td width="20dp"></td>
-            </tr>
+            <
             <tr>
                 <td width="20dp">&nbsp;</td>
-                <td width="20dp"><asp:Label ID="LB_2" runat="server" Text="List any previous medical problems:  " Font-Size="Larger" Width="300px"></asp:Label></td>
+                <td width="20dp"><asp:Label ID="LB_2" runat="server" Text="Previous medical problems:  " Font-Size="Larger" Width="300px"></asp:Label></td>
                 <td width="20dp"><asp:TextBox ID="PreviousProbs_tb" runat="server" width="480px"></asp:TextBox> </td>
                 
-                <td width="30dp"> <asp:Label ID="LB_3" runat="server" Text="Approximate Date: " Width="100px" Font-Size="Larger" style="float:right"></asp:Label></td>
-                <td width="20pdp">
-                    <asp:Calendar ID="Date_cal" runat="server"  DayHeaderStyle-Font-Size="Medium" Width="10px"></asp:Calendar>
-                </td>
                 
             </tr>
             <tr height="10dp"></tr>
             <tr>
                 <td width="20dp">&nbsp;</td>
-                <td width="20dp"><asp:Label ID="LB_4" runat="server" Text="List all current medications:  " Font-Size="Larger" Width="300px"></asp:Label></td>
+                <td width="20dp"><asp:Label ID="LB_4" runat="server" Text="Current medications:  " Font-Size="Larger" Width="300px"></asp:Label></td>
                 <td width="20dp"><asp:TextBox ID="CurrentMedication_tb" runat="server" width="400px"></asp:TextBox> </td>
                 <td width="30dp"> <asp:Label ID="LB_5" runat="server" Text="Dosage: " Width="80px" Font-Size="Larger" ></asp:Label></td>
                 <td width="20dp"><asp:TextBox ID="Dosage_tb" runat="server"></asp:TextBox></td>
@@ -49,19 +39,16 @@
             <tr height="20dp"></tr>
             <tr> 
                 <td width="20dp">&nbsp;</td>
-                <td width="20dp"><asp:Label ID="LB_7" runat="server" Text="Do you have any allergies? " Width="250px" Font-Size="Larger"></asp:Label></td>
-                <td width="20dp"><asp:RadioButton ID="Yes_rbn" runat="server" Text="Yes" Font-Size="Larger"/> &nbsp;&nbsp;
-                    <asp:RadioButton ID="No_rbn" runat="server" Text="No" Font-Size="Larger"/>
-                </td>
+                
                 <td width="30dp">
                     <asp:Label ID="LB_8" runat="server" Text="List the allergies: " Width="150px" Font-Size="Larger"></asp:Label></td>
                 <td width="20dp">
-                    <asp:TextBox ID="Allergies_tb" runat="server" Width="200px "></asp:TextBox> </td>
+                    <asp:TextBox ID="Allergies_tb" runat="server" Width="400px "></asp:TextBox> </td>
             </tr>
             <tr height="20dp"></tr>
             <tr>
                 <td width="20dp">&nbsp;</td>
-                <td width="20dp"><asp:Label ID="LB_9" runat="server" Text="List any major surgeries:  " Font-Size="Larger" Width="250px"></asp:Label></td>
+                <td width="20dp"><asp:Label ID="LB_9" runat="server" Text="Major surgeries:  " Font-Size="Larger" Width="250px"></asp:Label></td>
                 <td width="20dp"><asp:TextBox ID="MajorSurgeries_tb" runat="server" width="400px"></asp:TextBox> </td>
                 
                 <td width="30dp"> <asp:Label ID="LB_10" runat="server" Text="Approximate Date: " Width="100px" Font-Size="Larger" style="float:right"></asp:Label></td>
@@ -72,7 +59,7 @@
             <tr height="20dp"></tr>
             <tr>
                 <td width="20dp">&nbsp;</td>
-                <td width="20dp"><asp:Label ID="LB_11" runat="server" Text="List any family history of major medical problems:  " Font-Size="Larger" Width="300px"></asp:Label></td>
+                <td width="20dp"><asp:Label ID="LB_11" runat="server" Text="Any family history of major medical problems:  " Font-Size="Larger" Width="300px"></asp:Label></td>
                 <td width="20dp"><asp:TextBox ID="FamHistory_tb" runat="server" width="480px"></asp:TextBox> </td>
                 
             </tr>
@@ -101,10 +88,7 @@
              <tr height="20dp"></tr>
             <tr>
                 <td width="20dp">&nbsp;</td>
-                <td width="20dp"> <asp:Label ID="Lb_16" runat="server" Text="Do you take prescription drugs for non medical reason?  " Font-Size="Larger" Width="300px" ></asp:Label></td>
-                <td width="20dp" ><asp:RadioButton ID="DrugsYes_rbn" runat="server" Text="Yes" Font-Size="Larger"/> &nbsp;&nbsp;
-                    <asp:RadioButton ID="DrugsNo_rbn" runat="server" Text="No" Font-Size="Larger"/>
-                </td>
+                
                 
             </tr>
              <tr height="20dp"></tr>
@@ -134,5 +118,4 @@
         </table>
     </form>
 </body>
-
 </html>
