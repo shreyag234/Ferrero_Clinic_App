@@ -54,7 +54,7 @@
                     <asp:Label ID="Password_LB1" runat="server" Text="Password :"></asp:Label>
                 </td>
                 <td class="auto-style4">
-                    <asp:TextBox ID="Password_Box01" runat="server" TextMode="Password" OnTextChanged="Password_Box01_TextChanged"></asp:TextBox>
+                    <asp:TextBox ID="Password_Box01" runat="server" TextMode="Password"></asp:TextBox>
                 </td>
                 <td>
                     <asp:Label ID="matching_passwords_errorLB01" runat="server" ForeColor="#CC0000" Text="Passwords do not match" Visible="false"></asp:Label>
