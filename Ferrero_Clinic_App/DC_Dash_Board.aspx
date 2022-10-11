@@ -50,7 +50,7 @@
             <tr>
                 <td class="auto-style3">&nbsp;</td>
                 <td class="auto-style7">
-                    <asp:Button ID="Add_Patient_BTN" runat="server" Text="Add A New Patient" Width="304px" />
+                    <asp:Button ID="Add_Patient_BTN" runat="server" Text="Add A New Patient" Width="304px" OnClick="Add_Patient_BTN_Click" />
                 </td>
                 <td class="auto-style4">
                     <asp:Button ID="Veiw_Patient_BTN" runat="server" Text="Veiw Patient File" Width="291px" />
