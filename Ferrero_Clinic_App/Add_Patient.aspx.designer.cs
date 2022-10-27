@@ -141,13 +141,13 @@ namespace Ferrero_Clinic_App
         protected global::System.Web.UI.WebControls.Label Zip_LB;
 
         /// <summary>
-        /// Zio_tb control.
+        /// Zip_tb control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Zio_tb;
+        protected global::System.Web.UI.WebControls.TextBox Zip_tb;
 
         /// <summary>
         /// DOB_LB control.
