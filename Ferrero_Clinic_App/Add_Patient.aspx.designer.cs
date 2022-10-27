@@ -159,13 +159,13 @@ namespace Ferrero_Clinic_App
         protected global::System.Web.UI.WebControls.Label DOB_LB;
 
         /// <summary>
-        /// DOB_tb control.
+        /// DOB_picker control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox DOB_tb;
+        protected global::System.Web.UI.WebControls.Calendar DOB_picker;
 
         /// <summary>
         /// Phone_LB control.

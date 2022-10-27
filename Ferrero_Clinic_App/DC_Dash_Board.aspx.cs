@@ -12,6 +12,7 @@ namespace Ferrero_Clinic_App
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alert", "alert('Login Successful!');", true);
         }
 
         protected void Add_Patient_BTN_Click(object sender, EventArgs e)

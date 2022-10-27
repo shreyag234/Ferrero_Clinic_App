@@ -17,7 +17,7 @@ namespace Ferrero_Clinic_App
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "Success Message", "alert('Admin login succesfully!');", true);
         }
 
         protected void Add_BTN_Click(object sender, EventArgs e)
@@ -53,6 +53,7 @@ namespace Ferrero_Clinic_App
                     con.Open();
                     cmd.ExecuteNonQuery();
                     con.Close();
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('User added sucessfully!');", true);
                 }
                 else
                 {
@@ -91,6 +92,7 @@ namespace Ferrero_Clinic_App
                     con.Open();
                     cmd.ExecuteNonQuery();
                     con.Close();
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('User added succesfully!');", true);
                 }
                 else
                 {

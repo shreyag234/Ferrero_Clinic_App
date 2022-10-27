@@ -45,6 +45,8 @@ namespace Ferrero_Clinic_App
                 }
                 if (bEqual)
                 {
+                    Response.Write("<script type=\"text/javascript\">alert('first');</script>");
+                    
                     Response.Redirect("New_User.aspx");
                 }
             }

@@ -11,12 +11,14 @@ namespace Ferrero_Clinic_App
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            DOB_picker.Height = 30;
+            DOB_picker.Width = 30;
         }
 
-        protected void Surname_tb_TextChanged(object sender, EventArgs e)
-        {
 
+        protected void Next_btn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Medical_History.aspx");
         }
     }
 }
