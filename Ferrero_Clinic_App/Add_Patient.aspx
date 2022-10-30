@@ -69,7 +69,7 @@
                 <td class="auto-style3">
                     <asp:Label ID="Zip_LB" runat="server" Text="Zip: " Font-Size="Larger"></asp:Label> </td>
                 <td width="20dp">
-                    <asp:TextBox ID="Zio_tb" runat="server" Width="80px"></asp:TextBox></td>
+                    <asp:TextBox ID="Zip_tb" runat="server" Width="80px"></asp:TextBox></td>
             </tr>
             <tr>
                 <td width="20dp">&nbsp;</td>
