@@ -60,6 +60,24 @@ namespace Ferrero_Clinic_App
         protected global::System.Web.UI.WebControls.TextBox PF_Name_TB01;
 
         /// <summary>
+        /// P_Phone_LB01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label P_Phone_LB01;
+
+        /// <summary>
+        /// P_Phone_TB01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox P_Phone_TB01;
+
+        /// <summary>
         /// PS_Name_LB01 control.
         /// </summary>
         /// <remarks>
@@ -78,6 +96,24 @@ namespace Ferrero_Clinic_App
         protected global::System.Web.UI.WebControls.TextBox PS_Name_TB01;
 
         /// <summary>
+        /// P_Email_LB01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label P_Email_LB01;
+
+        /// <summary>
+        /// P_Email_TB01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox P_Email_TB01;
+
+        /// <summary>
         /// P_DOB_LB01 control.
         /// </summary>
         /// <remarks>
@@ -94,6 +130,168 @@ namespace Ferrero_Clinic_App
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox P_DOB_TB01;
+
+        /// <summary>
+        /// P_Occupation_LB01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label P_Occupation_LB01;
+
+        /// <summary>
+        /// P_Occupation_TB01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox P_Occupation_TB01;
+
+        /// <summary>
+        /// P_Add_LB01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label P_Add_LB01;
+
+        /// <summary>
+        /// P_Add_TB01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox P_Add_TB01;
+
+        /// <summary>
+        /// P_Employer_LB01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label P_Employer_LB01;
+
+        /// <summary>
+        /// P_Employer_TB01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox P_Employer_TB01;
+
+        /// <summary>
+        /// P_City_LB01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label P_City_LB01;
+
+        /// <summary>
+        /// P_City_TB01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox P_City_TB01;
+
+        /// <summary>
+        /// P_M_Stat_LB01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label P_M_Stat_LB01;
+
+        /// <summary>
+        /// P_M_Stat_TB01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox P_M_Stat_TB01;
+
+        /// <summary>
+        /// P_State_LB01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label P_State_LB01;
+
+        /// <summary>
+        /// P_State_TB01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox P_State_TB01;
+
+        /// <summary>
+        /// P_SP_F_Name_LB01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label P_SP_F_Name_LB01;
+
+        /// <summary>
+        /// P_SP_F_Name_TB01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox P_SP_F_Name_TB01;
+
+        /// <summary>
+        /// P_ZIP_LB01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label P_ZIP_LB01;
+
+        /// <summary>
+        /// P_ZIP_TB01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox P_ZIP_TB01;
+
+        /// <summary>
+        /// P_Gender_LB01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label P_Gender_LB01;
+
+        /// <summary>
+        /// P_Gender_TB01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox P_Gender_TB01;
 
         /// <summary>
         /// Search_BTN_01 control.
