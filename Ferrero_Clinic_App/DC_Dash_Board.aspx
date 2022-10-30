@@ -53,7 +53,7 @@
                     <asp:Button ID="Add_Patient_BTN" runat="server" Text="Add A New Patient" Width="304px" OnClick="Add_Patient_BTN_Click" />
                 </td>
                 <td class="auto-style4">
-                    <asp:Button ID="Veiw_Patient_BTN" runat="server" Text="Veiw Patient File" Width="291px" />
+                    <asp:Button ID="Veiw_Patient_BTN" runat="server" Text="Veiw Patient File" Width="291px" OnClick="Veiw_Patient_BTN_Click" />
                 </td>
                 <td class="auto-style5">
                     <asp:Button ID="Generate_Report_BTN" runat="server" Text="Generate A Report" />

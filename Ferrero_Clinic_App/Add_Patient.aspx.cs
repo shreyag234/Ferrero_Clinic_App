@@ -33,7 +33,7 @@ namespace Ferrero_Clinic_App
             cmd.Parameters.AddWithValue("@Zip", Zip_tb.Text);
             //cmd.Parameters.AddWithValue("@DOB", DOB_picker.SelectedDate);
             cmd.Parameters.AddWithValue("@Phone", PhoneNum_tb.Text);
-            cmd.Parameters.AddWithValue("@Email", Eamil_tb.Text);
+            cmd.Parameters.AddWithValue("@Email", Email_tb.Text);
             cmd.Parameters.AddWithValue("@Occupation", Occupation_tb.Text);
             cmd.Parameters.AddWithValue("@Employer", employer_tb.Text);
             cmd.Parameters.AddWithValue("@Marital_Status", StatusList_rbn.SelectedValue);

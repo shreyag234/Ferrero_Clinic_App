@@ -129,6 +129,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View_Patient.aspx.cs">
       <DependentUpon>View_Patient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="View_Patient.aspx.designer.cs">
       <DependentUpon>View_Patient.aspx</DependentUpon>

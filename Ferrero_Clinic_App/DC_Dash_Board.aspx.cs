@@ -19,5 +19,10 @@ namespace Ferrero_Clinic_App
         {
             Response.Redirect("Add_Patient.aspx");
         }
+
+        protected void Veiw_Patient_BTN_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("View_Patient.aspx");
+        }
     }
 }
