@@ -14,17 +14,16 @@ namespace Ferrero_Clinic_App
         SqlConnection con = new SqlConnection("Data Source =(LocalDB)\\MSSQLLocalDB; AttachDbFilename=|DataDirectory|\\Ferrero_DBM.mdf;Integrated Security = True;");
         protected void Page_Load(object sender, EventArgs e)
         {
-            DOB_picker.Height = 30;
-            DOB_picker.Width = 30;
         }
 
 
         protected void Next_btn_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("insert into [dbo].[Patients](Patient_Name, Patient_Surname, Maiden_Name, Street, City, State, Zip, DOB, Phone, Email, Occupation," +
+            SqlCommand cmd = new SqlCommand("insert into [dbo].[Patients](Patient_ID, Patient_Name, Patient_Surname, Maiden_Name, Street, City, State, Zip, DOB, Phone, Email, Occupation," +
                 " Employer, Marital_Status, Patient_Spouse_Name, Gender, Emg_Contact, Relation, Emg_Phone)" +
                 "values(@Patient_Name,@Patient_Surname,@Maiden_Name,@Street,@City,@State,@Zip,@DOB,@Phone,@Email,@Occupation,@Employer,@Marital_Status,@Patient_Spouse_Name,@Gender,@Emg_Contact,@Relation,@Emg_Phone)", con);
-            
+
+            cmd.Parameters.AddWithValue("@Patient_ID", ID_tb.Text);
             cmd.Parameters.AddWithValue("@Patient_Name", Name_tb.Text);
             cmd.Parameters.AddWithValue("@Patient_Surname", Surname_tb.Text);
             cmd.Parameters.AddWithValue("@Maiden_Name", Maiden_tb.Text);
@@ -32,7 +31,7 @@ namespace Ferrero_Clinic_App
             cmd.Parameters.AddWithValue("@City", City_tb.Text);
             cmd.Parameters.AddWithValue("@State", State_tb.Text);
             cmd.Parameters.AddWithValue("@Zip", Zip_tb.Text);
-            cmd.Parameters.AddWithValue("@DOB", DOB_picker.SelectedDate);
+            //cmd.Parameters.AddWithValue("@DOB", DOB_picker.SelectedDate);
             cmd.Parameters.AddWithValue("@Phone", PhoneNum_tb.Text);
             cmd.Parameters.AddWithValue("@Email", Eamil_tb.Text);
             cmd.Parameters.AddWithValue("@Occupation", Occupation_tb.Text);
@@ -47,7 +46,7 @@ namespace Ferrero_Clinic_App
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('User added sucessfully!');" , true);
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Details added sucessfully!');" , true);
 
             Response.Redirect("Medical_History.aspx");
         }
