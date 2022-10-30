@@ -24,6 +24,33 @@ namespace Ferrero_Clinic_App
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// Patient_ID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Patient_ID;
+
+        /// <summary>
+        /// pID_tb control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox pID_tb;
+
+        /// <summary>
+        /// IDvalidate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator IDvalidate;
+
+        /// <summary>
         /// LB_2 control.
         /// </summary>
         /// <remarks>
@@ -213,22 +240,31 @@ namespace Ferrero_Clinic_App
         protected global::System.Web.UI.WebControls.Label LB_12;
 
         /// <summary>
-        /// AlcoholYes_rbn control.
+        /// Alcohol_rbn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton AlcoholYes_rbn;
+        protected global::System.Web.UI.WebControls.RadioButtonList Alcohol_rbn;
 
         /// <summary>
-        /// AlcoholNo_rbn control.
+        /// Yes_rbn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton AlcoholNo_rbn;
+        protected global::System.Web.UI.WebControls.ListItem Yes_rbn;
+
+        /// <summary>
+        /// No_rbn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListItem No_rbn;
 
         /// <summary>
         /// alcoholValidate control.
@@ -267,13 +303,22 @@ namespace Ferrero_Clinic_App
         protected global::System.Web.UI.WebControls.Label LB_14;
 
         /// <summary>
+        /// Smoke_rbn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Smoke_rbn;
+
+        /// <summary>
         /// SmokeYes_rbn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton SmokeYes_rbn;
+        protected global::System.Web.UI.WebControls.ListItem SmokeYes_rbn;
 
         /// <summary>
         /// SmokeNo_rbn control.
@@ -282,7 +327,7 @@ namespace Ferrero_Clinic_App
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton SmokeNo_rbn;
+        protected global::System.Web.UI.WebControls.ListItem SmokeNo_rbn;
 
         /// <summary>
         /// validate control.
@@ -321,13 +366,22 @@ namespace Ferrero_Clinic_App
         protected global::System.Web.UI.WebControls.Label Lb_17;
 
         /// <summary>
+        /// Illegal_rbn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Illegal_rbn;
+
+        /// <summary>
         /// IllegalYes_rbn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton IllegalYes_rbn;
+        protected global::System.Web.UI.WebControls.ListItem IllegalYes_rbn;
 
         /// <summary>
         /// IllegalNo_rbn control.
@@ -336,7 +390,7 @@ namespace Ferrero_Clinic_App
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton IllegalNo_rbn;
+        protected global::System.Web.UI.WebControls.ListItem IllegalNo_rbn;
 
         /// <summary>
         /// validatecheck control.
