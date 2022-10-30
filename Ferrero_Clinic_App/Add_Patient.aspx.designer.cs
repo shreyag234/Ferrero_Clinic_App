@@ -24,6 +24,33 @@ namespace Ferrero_Clinic_App
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// ID_LB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ID_LB;
+
+        /// <summary>
+        /// ID_tb control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ID_tb;
+
+        /// <summary>
+        /// idValidate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator idValidate;
+
+        /// <summary>
         /// Name_LB control.
         /// </summary>
         /// <remarks>
@@ -40,6 +67,15 @@ namespace Ferrero_Clinic_App
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Name_tb;
+
+        /// <summary>
+        /// nameValidate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator nameValidate;
 
         /// <summary>
         /// Surname_LB control.
@@ -60,6 +96,15 @@ namespace Ferrero_Clinic_App
         protected global::System.Web.UI.WebControls.TextBox Surname_tb;
 
         /// <summary>
+        /// surnameValidate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator surnameValidate;
+
+        /// <summary>
         /// Maiden_LB control.
         /// </summary>
         /// <remarks>
@@ -76,6 +121,15 @@ namespace Ferrero_Clinic_App
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Maiden_tb;
+
+        /// <summary>
+        /// maidenValidate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator maidenValidate;
 
         /// <summary>
         /// Address_LB control.
@@ -96,6 +150,15 @@ namespace Ferrero_Clinic_App
         protected global::System.Web.UI.WebControls.TextBox Address_tb;
 
         /// <summary>
+        /// addressValidate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator addressValidate;
+
+        /// <summary>
         /// City_LB control.
         /// </summary>
         /// <remarks>
@@ -112,6 +175,15 @@ namespace Ferrero_Clinic_App
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox City_tb;
+
+        /// <summary>
+        /// cityValidate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator cityValidate;
 
         /// <summary>
         /// State_LB control.
@@ -132,6 +204,15 @@ namespace Ferrero_Clinic_App
         protected global::System.Web.UI.WebControls.TextBox State_tb;
 
         /// <summary>
+        /// stateValidate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator stateValidate;
+
+        /// <summary>
         /// Zip_LB control.
         /// </summary>
         /// <remarks>
@@ -150,22 +231,13 @@ namespace Ferrero_Clinic_App
         protected global::System.Web.UI.WebControls.TextBox Zip_tb;
 
         /// <summary>
-        /// DOB_LB control.
+        /// zipValidate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label DOB_LB;
-
-        /// <summary>
-        /// DOB_picker control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar DOB_picker;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator zipValidate;
 
         /// <summary>
         /// Phone_LB control.
@@ -186,6 +258,15 @@ namespace Ferrero_Clinic_App
         protected global::System.Web.UI.WebControls.TextBox PhoneNum_tb;
 
         /// <summary>
+        /// phoneValidate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator phoneValidate;
+
+        /// <summary>
         /// Email_LB control.
         /// </summary>
         /// <remarks>
@@ -204,6 +285,15 @@ namespace Ferrero_Clinic_App
         protected global::System.Web.UI.WebControls.TextBox Eamil_tb;
 
         /// <summary>
+        /// emailValidate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator emailValidate;
+
+        /// <summary>
         /// Occupation_LB control.
         /// </summary>
         /// <remarks>
@@ -220,6 +310,15 @@ namespace Ferrero_Clinic_App
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Occupation_tb;
+
+        /// <summary>
+        /// occupationValidate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator occupationValidate;
 
         /// <summary>
         /// Employer_LB control.
