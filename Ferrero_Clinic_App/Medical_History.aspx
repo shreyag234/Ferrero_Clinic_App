@@ -17,8 +17,16 @@
             <h1 style="font-size:30px ">PATIENT MEDICAL HISTORY</h1>
         </div>
          <table style="margin-left:auto;margin-right:auto;" >
-             <tr height="10dp"></tr>
-            
+             <tr height="20dp"></tr>
+             <tr height="20dp">
+                 <td width="20dp">&nbsp;</td>
+                <td width="20dp"><asp:Label ID="Patient_ID" runat="server" Text="ID Number: " Font-Size="Larger"></asp:Label></td>
+                <td width="20dp"><asp:TextBox ID="pID_tb" runat="server" width="200px"></asp:TextBox> </td>
+                <asp:RequiredFieldValidator ID="IDvalidate" 
+                         runat="server" ControlToValidate ="pID_tb"
+                         ErrorMessage="Please provide ID Number" ForeColor="DarkRed" Display="Dynamic" CssClass="display-next"></asp:RequiredFieldValidator>
+             </tr>
+            <tr height="20dp"></tr>
             <tr>
                 <td width="20dp">&nbsp;</td>
                 <td width="20dp"><asp:Label ID="LB_2" runat="server" Text="Previous medical problems:  " Font-Size="Larger" Width="300px"></asp:Label></td>
@@ -79,11 +87,13 @@
             <tr>
                 <td width="20dp">&nbsp;</td>
                 <td width="20dp"> <asp:Label ID="LB_12" runat="server" Text="Do you drink alcohol?  " Font-Size="Larger" ></asp:Label></td>
-                <td width="20dp"><asp:RadioButton ID="AlcoholYes_rbn" runat="server" Text="Yes" Font-Size="Larger"/> &nbsp;&nbsp;
-                    <asp:RadioButton ID="AlcoholNo_rbn" runat="server" Text="No" Font-Size="Larger"/>
-                </td>
+                <td widht="20dp">&nbsp;<asp:RadioButtonList ID="Alcohol_rbn" runat="server" Font-Size="Larger">
+                    <asp:ListItem ID="Yes_rbn" >Yes</asp:ListItem>
+                    <asp:ListItem ID="No_rbn" >No</asp:ListItem>
+                </asp:RadioButtonList></td>
+               
                 <asp:RequiredFieldValidator ID="alcoholValidate" 
-                         runat="server" ControlToValidate ="AlcoholYes_rbn"
+                         runat="server" ControlToValidate ="Alcohol_rbn"
                          ErrorMessage="Please select one" ForeColor="DarkRed" Display="Dynamic" CssClass="display-next"></asp:RequiredFieldValidator>
 
                 <td> <asp:Label ID="LB_13" runat="server" Text="If so, how often? " Font-Size="Larger" ></asp:Label></td>
@@ -94,11 +104,13 @@
             <tr>
                 <td width="20dp">&nbsp;</td>
                 <td width="20dp"> <asp:Label ID="LB_14" runat="server" Text="Do you smoke cigarettes?  " Font-Size="Larger" ></asp:Label></td>
-                <td width="20dp"><asp:RadioButton ID="SmokeYes_rbn" runat="server" Text="Yes" Font-Size="Larger"/> &nbsp;&nbsp;
-                    <asp:RadioButton ID="SmokeNo_rbn" runat="server" Text="No" Font-Size="Larger"/>
-                </td>
+                <td widht="20dp">&nbsp;<asp:RadioButtonList ID="Smoke_rbn" runat="server" Font-Size="Larger">
+                    <asp:ListItem ID="SmokeYes_rbn" >Yes</asp:ListItem>
+                    <asp:ListItem ID="SmokeNo_rbn" >No</asp:ListItem>
+                    
+                </asp:RadioButtonList></td>
                 <asp:RequiredFieldValidator ID="validate" 
-                         runat="server" ControlToValidate ="SmokeYes_rbn"
+                         runat="server" ControlToValidate ="Smoke_rbn"
                          ErrorMessage="Please select one" ForeColor="DarkRed" Display="Dynamic" CssClass="display-next"></asp:RequiredFieldValidator>
 
                 <td> <asp:Label ID="LB_15" runat="server" Text="If so, how often? " Font-Size="Larger" ></asp:Label></td>
@@ -115,11 +127,12 @@
             <tr>
                 <td width="20dp">&nbsp;</td>
                 <td width="20dp"> <asp:Label ID="Lb_17" runat="server" Text="Do you take illegal drugs?  " Font-Size="Larger" ></asp:Label></td>
-                <td width="20dp"><asp:RadioButton ID="IllegalYes_rbn" runat="server" Text="Yes" Font-Size="Larger"/> &nbsp;&nbsp;
-                    <asp:RadioButton ID="IllegalNo_rbn" runat="server" Text="No" Font-Size="Larger"/>
-                </td>
+                <td widht="20dp">&nbsp;<asp:RadioButtonList ID="Illegal_rbn" runat="server" Font-Size="Larger">
+                    <asp:ListItem ID="IllegalYes_rbn" >Yes</asp:ListItem>
+                    <asp:ListItem ID="IllegalNo_rbn" >No</asp:ListItem>
+                </asp:RadioButtonList></td>
                 <asp:RequiredFieldValidator ID="validatecheck" 
-                         runat="server" ControlToValidate ="IllegalYes_rbn"
+                         runat="server" ControlToValidate ="Illegal_rbn"
                          ErrorMessage="Please select one" ForeColor="DarkRed" Display="Dynamic" CssClass="display-next"></asp:RequiredFieldValidator>
                 
             </tr>
