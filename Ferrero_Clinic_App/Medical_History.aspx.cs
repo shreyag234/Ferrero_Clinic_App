@@ -27,7 +27,7 @@ namespace Ferrero_Clinic_App
             cmd.Parameters.AddWithValue("@Allergies", Allergies_tb.Text);
            // cmd.Parameters.AddWithValue("@Medical_Procedures", );
 
-              //  "Family_Med_History, Alcohol, Alcohol_Frequency, Smoking, \" +\r\n                \"Smoking_Frequency, Illegal_Drugs, Patient_ID
+              //  "Family_Med_History, Alcohol, Alcohol_Frequency, Smoking, \""Smoking_Frequency, Illegal_Drugs, Patient_ID
 
             //okie
             con.Open();
@@ -35,7 +35,7 @@ namespace Ferrero_Clinic_App
             con.Close();
             ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Details added sucessfully!');", true);
 
-            Response.Redirect("Medical_History.aspx");
+            Response.Redirect("DashBoard.aspx");
 
         }
 	}
