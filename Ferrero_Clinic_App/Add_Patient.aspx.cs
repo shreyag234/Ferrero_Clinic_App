@@ -43,6 +43,7 @@ namespace Ferrero_Clinic_App
             cmd.Parameters.AddWithValue("@Relation", Relation_tb.Text);
             cmd.Parameters.AddWithValue("@Emg_Phone", EPhone_tb.Text);
             
+            //okie
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
