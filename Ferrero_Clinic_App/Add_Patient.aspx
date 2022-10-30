@@ -138,7 +138,7 @@
         <tr>
                 <td width="20dp">&nbsp;</td>
                 <td width="20dp"><asp:Label ID="Email_LB" runat="server" Text="Email:  " Font-Size="Larger"></asp:Label></td>
-                <td width="20dp"><asp:TextBox ID="Eamil_tb" runat="server" width="250px"></asp:TextBox> </td>
+                <td width="20dp"><asp:TextBox ID="Email_tb" runat="server" width="250px"></asp:TextBox> </td>
              <asp:RequiredFieldValidator ID="emailValidate" 
                          runat="server" ControlToValidate ="Email_tb"
                          ErrorMessage="Please enter you email" ForeColor="DarkRed" Display="Dynamic" CssClass="display-next"></asp:RequiredFieldValidator>
