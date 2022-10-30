@@ -76,9 +76,7 @@
                 <td class="auto-style2">&nbsp;</td>
                 <td width="20dp"><asp:Label ID="Maiden_LB" runat="server" Text="Maiden: " Font-Size="Larger"></asp:Label></td>
                 <td width="20dp"><asp:TextBox ID="Maiden_tb" runat="server"></asp:TextBox></td>
-                 <asp:RequiredFieldValidator ID="maidenValidate" 
-                         runat="server" ControlToValidate ="Maiden_tb"
-                         ErrorMessage="Enter your maiden name" ForeColor="DarkRed" Display="Static" CssClass="display-next"></asp:RequiredFieldValidator>
+          
                 <td>&nbsp;</td>
                 <td class="auto-style3">&nbsp;</td>
                 <td class="auto-style3">&nbsp;</td>
@@ -155,6 +153,7 @@
                 <td width="20dp"><asp:Label ID="Employer_LB" runat="server" Text="Employer: " Font-Size="Larger"></asp:Label></td>
                 <td width="20dp">
                     <asp:TextBox ID="employer_tb" runat="server" ></asp:TextBox></td>
+             
                 <td width="20dp">&nbsp;</td>
                 <td class="auto-style3">&nbsp;</td>
                 <td class="auto-style3">&nbsp;</td>
@@ -168,6 +167,10 @@
                     <asp:ListItem ID="Divorced_rbn">Divorced</asp:ListItem>
                     <asp:ListItem ID="Widowed_rbn">Widowed</asp:ListItem>
                 </asp:RadioButtonList></td>
+                 <asp:RequiredFieldValidator ID="statusValidate" 
+                         runat="server" ControlToValidate ="StatusList_rbn"
+                         ErrorMessage="Please select one" ForeColor="DarkRed" Display="Static" CssClass="display-next"></asp:RequiredFieldValidator>
+
                 <td width="20dp"><asp:Label ID="Spouse_LB" runat="server" Text="Spouse Fullname: " Font-Size="Larger"></asp:Label></td>
                 <td width="20dp"> <asp:TextBox ID="SpouseName_tb" runat="server" Width="200px" ></asp:TextBox></td>
                 <td class="auto-style3">&nbsp;</td>
@@ -180,6 +183,9 @@
                         <asp:ListItem>Other</asp:ListItem>
                     </asp:RadioButtonList>
                 </td>
+                 <asp:RequiredFieldValidator ID="validate1" 
+                         runat="server" ControlToValidate ="RadioButtonList1"
+                         ErrorMessage="Please select one" ForeColor="DarkRed" Display="Static" CssClass="display-next"></asp:RequiredFieldValidator>
                 <td class="auto-style3">&nbsp;</td>
                 <td class="auto-style3">&nbsp;</td>
                 <td class="auto-style3">&nbsp;</td>
@@ -190,6 +196,10 @@
                 <td width="20dp">&nbsp;</td>
                 <td width="20dp"><asp:Label ID="EContact_LB" runat="server" Text="Emergency Contact:  " Font-Size="Larger" Widht="350px"></asp:Label></td>
                 <td width="20dp"><asp:TextBox ID="EContact_tb" runat="server" width="200px"></asp:TextBox> </td>
+                <asp:RequiredFieldValidator ID="validate2" 
+                         runat="server" ControlToValidate ="EContact_tb"
+                         ErrorMessage="Please enter a contact" ForeColor="DarkRed" Display="Static" CssClass="display-next"></asp:RequiredFieldValidator>
+
                 <td width="20dp">
                     <asp:Label ID="Relationship_LB" runat="server" Text="Relationship: " Font-Size="Larger"></asp:Label></td>
                 <td width="20dp"><asp:TextBox ID="Relation_tb" runat="server" Width="200px"></asp:TextBox></td>
@@ -197,6 +207,10 @@
                 <td class="auto-style2">&nbsp;</td>
                 <td width="20dp"><asp:Label ID="EPhone_LB" runat="server" Text="Emergengy Phone: " Font-Size="Larger"></asp:Label></td>
                 <td width="20dp"><asp:TextBox ID="EPhone_tb" runat="server" Width="200px"></asp:TextBox></td>
+                <asp:RequiredFieldValidator ID="validate3" 
+                         runat="server" ControlToValidate ="EPhone_tb"
+                         ErrorMessage="Please select one" ForeColor="DarkRed" Display="Static" CssClass="display-next"></asp:RequiredFieldValidator>
+
                 <td class="auto-style3">&nbsp;</td>
                 <td class="auto-style3">&nbsp;</td>
                 <td class="auto-style3">&nbsp;</td>
