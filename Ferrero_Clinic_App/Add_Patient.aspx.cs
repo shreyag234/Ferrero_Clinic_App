@@ -19,9 +19,20 @@ namespace Ferrero_Clinic_App
 
         protected void Next_btn_Click(object sender, EventArgs e)
         {
+            string dob = ID_tb.Text.Substring(0, 6);
+            if ((Convert.ToInt32(dob.Substring(0, 1)) == 0))
+            {
+                dob = "20" + dob.Substring(0, 2) + "-" + dob.Substring(2, 2) + "-" + dob.Substring(4, 2);
+
+            }
+            else
+            {
+                dob = "19" + dob.Substring(0, 2) + "-" + dob.Substring(2, 2) + "-" + dob.Substring(4, 2);
+
+            }
             SqlCommand cmd = new SqlCommand("insert into [dbo].[Patients](Patient_ID, Patient_Name, Patient_Surname, Maiden_Name, Street, City, State, Zip, DOB, Phone, Email, Occupation," +
                 " Employer, Marital_Status, Patient_Spouse_Name, Gender, Emg_Contact, Relation, Emg_Phone)" +
-                "values(@Patient_Name,@Patient_Surname,@Maiden_Name,@Street,@City,@State,@Zip,@DOB,@Phone,@Email,@Occupation,@Employer,@Marital_Status,@Patient_Spouse_Name,@Gender,@Emg_Contact,@Relation,@Emg_Phone)", con);
+                "values(@Patient_ID,@Patient_Name,@Patient_Surname,@Maiden_Name,@Street,@City,@State,@Zip,@DOB,@Phone,@Email,@Occupation,@Employer,@Marital_Status,@Patient_Spouse_Name,@Gender,@Emg_Contact,@Relation,@Emg_Phone)", con);
 
             cmd.Parameters.AddWithValue("@Patient_ID", ID_tb.Text);
             cmd.Parameters.AddWithValue("@Patient_Name", Name_tb.Text);
@@ -31,7 +42,7 @@ namespace Ferrero_Clinic_App
             cmd.Parameters.AddWithValue("@City", City_tb.Text);
             cmd.Parameters.AddWithValue("@State", State_tb.Text);
             cmd.Parameters.AddWithValue("@Zip", Zip_tb.Text);
-            //cmd.Parameters.AddWithValue("@DOB", DOB_picker.SelectedDate);
+            cmd.Parameters.AddWithValue("@DOB", DateTime.Parse(dob));
             cmd.Parameters.AddWithValue("@Phone", PhoneNum_tb.Text);
             cmd.Parameters.AddWithValue("@Email", Email_tb.Text);
             cmd.Parameters.AddWithValue("@Occupation", Occupation_tb.Text);
@@ -42,14 +53,15 @@ namespace Ferrero_Clinic_App
             cmd.Parameters.AddWithValue("@Emg_Contact", EContact_tb.Text);
             cmd.Parameters.AddWithValue("@Relation", Relation_tb.Text);
             cmd.Parameters.AddWithValue("@Emg_Phone", EPhone_tb.Text);
-            
-            //okie
+
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Details added sucessfully!');" , true);
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Details added sucessfully!');", true);
 
             Response.Redirect("Medical_History.aspx");
         }
+
+
     }
 }
