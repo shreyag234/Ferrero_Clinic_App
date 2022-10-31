@@ -11,7 +11,7 @@
             height: 377px;
         }
         .auto-style2 {
-            width: 244px;
+            width: 279px;
         }
         .auto-style3 {
             width: 314px;
@@ -34,7 +34,7 @@
                     <asp:Label ID="Please_Enter_LB01" runat="server" Text="Enter Patient ID Number:"></asp:Label>
                 </td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="ID_Number_TB01" runat="server" Width="156px"></asp:TextBox>
+                    <asp:TextBox ID="ID_Number_TB01" runat="server" Width="156px" OnTextChanged="TextChanged" ></asp:TextBox>
                 </td>
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style5">&nbsp;</td>
@@ -47,13 +47,13 @@
                     <asp:Label ID="PF_Name_LB01" runat="server" Text="Patient Name:" Visible="false"></asp:Label>
                 </td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="PF_Name_TB01" runat="server" Width="156px" Visible="false"></asp:TextBox>
+                    <asp:TextBox ID="PF_Name_TB01" runat="server" Width="156px" Visible="false" OnTextChanged="TextChanged" ></asp:TextBox>
                 </td>
                 <td class="auto-style4">
                     <asp:Label ID="P_Phone_LB01" runat="server" Text="Patient Phone:" Visible="False"></asp:Label>
                 </td>
                 <td class="auto-style5">
-                    <asp:TextBox ID="P_Phone_TB01" runat="server" Width="156px" Visible="false"></asp:TextBox>
+                    <asp:TextBox ID="P_Phone_TB01" runat="server" Width="156px" Visible="false" OnTextChanged="TextChanged" ></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -64,13 +64,13 @@
                     <asp:Label ID="PS_Name_LB01" runat="server" Text="Patient Surname Name:" Visible="false"></asp:Label>
                 </td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="PS_Name_TB01" runat="server" Width="156px" Visible="false"></asp:TextBox>
+                    <asp:TextBox ID="PS_Name_TB01" runat="server" Width="156px" Visible="false" OnTextChanged="TextChanged" ></asp:TextBox>
                 </td>
                 <td class="auto-style4">
                     <asp:Label ID="P_Email_LB01" runat="server" Text="Patient Email:" Visible="False"></asp:Label>
                 </td>
                 <td class="auto-style5">
-                    <asp:TextBox ID="P_Email_TB01" runat="server" Width="156px" Visible="false"></asp:TextBox>
+                    <asp:TextBox ID="P_Email_TB01" runat="server" Width="156px" Visible="false" OnTextChanged="TextChanged" ></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -87,7 +87,7 @@
                     <asp:Label ID="P_Occupation_LB01" runat="server" Text="Patient Occupation:" Visible="False"></asp:Label>
                 </td>
                 <td class="auto-style5">
-                    <asp:TextBox ID="P_Occupation_TB01" runat="server" Width="156px" Visible="false"></asp:TextBox>
+                    <asp:TextBox ID="P_Occupation_TB01" runat="server" Width="156px" Visible="false" OnTextChanged="TextChanged" ></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -98,13 +98,13 @@
                     <asp:Label ID="P_Add_LB01" runat="server" Text="Patient Address:" Visible="False"></asp:Label>
                 </td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="P_Add_TB01" runat="server" Width="256px" Visible="false"></asp:TextBox>
+                    <asp:TextBox ID="P_Add_TB01" runat="server" Width="256px" Visible="false" OnTextChanged="TextChanged" ></asp:TextBox>
                 </td>
                 <td class="auto-style4">
                     <asp:Label ID="P_Employer_LB01" runat="server" Text="Patient Employer:" Visible="False"></asp:Label>
                 </td>
                 <td class="auto-style5">
-                    <asp:TextBox ID="P_Employer_TB01" runat="server" Width="156px" Visible="false"></asp:TextBox>
+                    <asp:TextBox ID="P_Employer_TB01" runat="server" Width="156px" Visible="false" OnTextChanged="TextChanged" ></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -115,16 +115,18 @@
                     <asp:Label ID="P_City_LB01" runat="server" Text="Patient City:" Visible="False"></asp:Label>
                 </td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="P_City_TB01" runat="server" Width="156px" Visible="false"></asp:TextBox>
+                    <asp:TextBox ID="P_City_TB01" runat="server" Width="156px" Visible="false" OnTextChanged="TextChanged"></asp:TextBox>
                 </td>
                 <td class="auto-style4">
                     <asp:Label ID="P_M_Stat_LB01" runat="server" Text="Patient Maritual Status:" Visible="False"></asp:Label>
                 </td>
                 <td class="auto-style5">
-                    <asp:TextBox ID="P_M_Stat_TB01" runat="server" Width="156px" Visible="false"></asp:TextBox>
+                    <asp:TextBox ID="P_M_Stat_TB01" runat="server" Width="156px" Visible="false" OnTextChanged="TextChanged"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:TextBox ID="test_box" runat="server" Visible ="false"></asp:TextBox>
+                </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
@@ -132,13 +134,13 @@
                     <asp:Label ID="P_State_LB01" runat="server" Text="Patient State:" Visible="False"></asp:Label>
                 </td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="P_State_TB01" runat="server" Width="156px" Visible="false"></asp:TextBox>
+                    <asp:TextBox ID="P_State_TB01" runat="server" Width="156px" Visible="false" OnTextChanged="TextChanged"></asp:TextBox>
                 </td>
                 <td class="auto-style4">
                     <asp:Label ID="P_SP_F_Name_LB01" runat="server" Text="Patient Spouse Fullname:" Visible="False"></asp:Label>
                 </td>
                 <td class="auto-style5">
-                    <asp:TextBox ID="P_SP_F_Name_TB01" runat="server" Width="156px" Visible="false"></asp:TextBox>
+                    <asp:TextBox ID="P_SP_F_Name_TB01" runat="server" Width="156px" Visible="false" OnTextChanged="TextChanged"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -149,21 +151,25 @@
                     <asp:Label ID="P_ZIP_LB01" runat="server" Text="Patient ZIP:" Visible="False"></asp:Label>
                 </td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="P_ZIP_TB01" runat="server" Width="156px" Visible="false"></asp:TextBox>
+                    <asp:TextBox ID="P_ZIP_TB01" runat="server" Width="156px" Visible="false" OnTextChanged="TextChanged"></asp:TextBox>
                 </td>
                 <td class="auto-style4">
                     <asp:Label ID="P_Gender_LB01" runat="server" Text="Patient Gender:" Visible="False"></asp:Label>
                 </td>
                 <td class="auto-style5">
-                    <asp:TextBox ID="P_Gender_TB01" runat="server" Width="156px" Visible="false"></asp:TextBox>
+                    <asp:TextBox ID="P_Gender_TB01" runat="server" Width="156px" Visible="false" OnTextChanged="TextChanged"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style2">
+                    <asp:Label ID="PM_Name_LB01" runat="server" Text="Patient Maiden Name:" Visible="False"></asp:Label>
+                </td>
+                <td class="auto-style3">
+                    <asp:TextBox ID="PM_Name_TB01" runat="server" Width="156px" Visible="false" OnTextChanged="TextChanged"></asp:TextBox>
+                </td>
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style5">&nbsp;</td>
                 <td>&nbsp;</td>
@@ -175,13 +181,13 @@
                     <asp:Label ID="P_E_Cont_LB01" runat="server" Text="Patient Emergency Contact:" Visible="False"></asp:Label>
                 </td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="P_E_Cont_TB01" runat="server" Width="156px" Visible="false"></asp:TextBox>
+                    <asp:TextBox ID="P_E_Cont_TB01" runat="server" Width="156px" Visible="false" OnTextChanged="TextChanged"></asp:TextBox>
                 </td>
                 <td class="auto-style4">
                     <asp:Label ID="P_E_Cont_Phone_LB01" runat="server" Text="Emergency Contact Phone:" Visible="False"></asp:Label>
                 </td>
                 <td class="auto-style5">
-                    <asp:TextBox ID="P_E_Cont_Phone_TB01" runat="server" Width="156px" Visible="false"></asp:TextBox>
+                    <asp:TextBox ID="P_E_Cont_Phone_TB01" runat="server" Width="156px" Visible="false" OnTextChanged="TextChanged"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -192,7 +198,7 @@
                     <asp:Label ID="P_Relation_LB01" runat="server" Text="Relation:" Visible="False"></asp:Label>
                 </td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="P_Relation_TB01" runat="server" Width="156px" Visible="false"></asp:TextBox>
+                    <asp:TextBox ID="P_Relation_TB01" runat="server" Width="156px" Visible="false" OnTextChanged="TextChanged"></asp:TextBox>
                 </td>
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style5">&nbsp;</td>
@@ -213,7 +219,9 @@
                 <td class="auto-style2">
                     <asp:Button ID="Search_BTN_01" runat="server" Text="Search" Width="129px" OnClick="Search_BTN_01_Click" />
                 </td>
-                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style3">
+                    <asp:Button ID="Update_BTN01" runat="server" Text="Update" OnClick="Update_BTN01_Click"/>
+                </td>
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style5">
                     &nbsp;</td>
