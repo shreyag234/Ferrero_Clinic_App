@@ -222,6 +222,15 @@ namespace Ferrero_Clinic_App
         protected global::System.Web.UI.WebControls.TextBox P_M_Stat_TB01;
 
         /// <summary>
+        /// test_box control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox test_box;
+
+        /// <summary>
         /// P_State_LB01 control.
         /// </summary>
         /// <remarks>
@@ -294,6 +303,24 @@ namespace Ferrero_Clinic_App
         protected global::System.Web.UI.WebControls.TextBox P_Gender_TB01;
 
         /// <summary>
+        /// PM_Name_LB01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label PM_Name_LB01;
+
+        /// <summary>
+        /// PM_Name_TB01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox PM_Name_TB01;
+
+        /// <summary>
         /// P_E_Cont_LB01 control.
         /// </summary>
         /// <remarks>
@@ -355,5 +382,14 @@ namespace Ferrero_Clinic_App
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Search_BTN_01;
+
+        /// <summary>
+        /// Update_BTN01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Update_BTN01;
     }
 }
