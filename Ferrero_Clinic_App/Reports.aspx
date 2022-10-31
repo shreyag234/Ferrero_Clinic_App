@@ -16,7 +16,7 @@
         <div>
            <h1 style="font-size:30px ">GENERATE REPORTS</h1>
         </div>
-    </form>
+   
      <table style="margin-left:auto;margin-right:auto;" >
          <tr height="20dp"></tr>
              <tr height="20dp">
@@ -49,5 +49,6 @@
             </tr>
             <tr height="10dp"></tr>
      </table>
+         </form>
 </body>
 </html>
