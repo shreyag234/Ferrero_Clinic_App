@@ -14,6 +14,11 @@ namespace Ferrero_Clinic_App
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+        }
+
+        protected void Next_btn_Click(object sender, EventArgs e)
+        {
             SqlCommand cmd = new SqlCommand("insert into [dbo].[Diagnosis](Patient_ID, Diagnosis, Date_of_diagnosis, Medication)" +
                "values(@Patient_ID,@Diagnosis,@Date_of_diagnosis,@Medication)", con);
 
@@ -27,7 +32,7 @@ namespace Ferrero_Clinic_App
             con.Close();
             ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Patient diagnosis added!');", true);
 
-           // Response.Redirect("DC_Dash_Board.aspx");
+            // Response.Redirect("DC_Dash_Board.aspx");
         }
     }
 }
