@@ -77,6 +77,7 @@
       <DependentUpon>Ferrero_DBM.mdf</DependentUpon>
     </Content>
     <Content Include="DC_Dash_Board.aspx" />
+    <Content Include="Diagnosis.aspx" />
     <Content Include="index.aspx" />
     <Content Include="Medical_History.aspx" />
     <Content Include="New_User.aspx" />
@@ -104,6 +105,13 @@
     </Compile>
     <Compile Include="DC_Dash_Board.aspx.designer.cs">
       <DependentUpon>DC_Dash_Board.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnosis.aspx.cs">
+      <DependentUpon>Diagnosis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Diagnosis.aspx.designer.cs">
+      <DependentUpon>Diagnosis.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
