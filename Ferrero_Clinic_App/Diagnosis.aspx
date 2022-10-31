@@ -48,6 +48,17 @@
                          runat="server" ControlToValidate ="Medication_tb"
                          ErrorMessage="Pelase enter medicication" ForeColor="DarkRed" Display="Dynamic" CssClass="display-next"></asp:RequiredFieldValidator>
         </tr>
+            <tr height="20dp"></tr>
+            <tr height="20dp">
+                <td width="20dp">&nbsp;</td>
+                <td width="20dp">&nbsp;</td>
+                <td width="20dp"></td>
+                <td width="20dp">
+                    <asp:Button ID="Next_btn" runat="server" Text="Next" Font-Bold="true" Font-Size="Larger" Width="150px" Style="float: right" OnClick="Next_btn_Click" /></td>
+                <td width="20dp"></td>
+                <td width="20dp"></td>
+                
+            </tr>
      </table>
     </form>
 </body>
