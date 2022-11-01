@@ -15,6 +15,20 @@ namespace Ferrero_Clinic_App
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Request.Cookies["userCookie"] != null)
+            {
+                HttpCookie cookieObj = Request.Cookies["userCookie"];
+                string cookieObj2 = Request.Cookies["userCookie"].Value;
+                string message = "alert('Login Successful! " + cookieObj2 + " , welcome!')";
+                ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+
+            }
+            else
+            {
+                ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", "alert('No cookies :(');", true);
+                Response.Redirect("index.aspx");
+
+            }
             Update_BTN01.Visible = false;
         }
 
