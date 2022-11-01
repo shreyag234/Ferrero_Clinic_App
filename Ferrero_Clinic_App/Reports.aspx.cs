@@ -180,8 +180,10 @@ namespace Ferrero_Clinic_App
 
                 document.Add(table);
                 document.Close();
-
+                
                 byte[] bytes = memoryStream.ToArray();
+                
+                System.IO.File.WriteAllBytes(HttpContext.Current.Server.MapPath("~/Reports/").ToString() + DateTime.Now.ToString("dd-MM-yyyy-HH") + "_DiagnosisReport.pdf", bytes);
                 memoryStream.Close();
                 Response.Clear();
                 Response.ContentType = "application/pdf";
