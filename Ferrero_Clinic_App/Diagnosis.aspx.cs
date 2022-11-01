@@ -25,7 +25,7 @@ namespace Ferrero_Clinic_App
             cmd.Parameters.AddWithValue("@Patient_ID", patientID_tb.Text);
             cmd.Parameters.AddWithValue("@Diagnosis", Diagnosis_tb.Text);
             cmd.Parameters.AddWithValue("@Date_of_diagnosis", DiagnosisDate_cal.SelectedDate);
-            cmd.Parameters.AddWithValue("@Mecdication", Medication_tb.Text);
+            cmd.Parameters.AddWithValue("@Medication", Medication_tb.Text);
 
             con.Open();
             cmd.ExecuteNonQuery();
