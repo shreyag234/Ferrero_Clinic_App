@@ -72,7 +72,10 @@ namespace Ferrero_Clinic_App
             cmd.ExecuteNonQuery();
             con.Close();
             ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Details added sucessfully!');", true);
-
+            
+            string folderName = HttpContext.Current.Server.MapPath("~/Patients").ToString();
+            string pathString = System.IO.Path.Combine(folderName, ID_tb.Text);
+            System.IO.Directory.CreateDirectory(pathString);
             Response.Redirect("Medical_History.aspx");
         }
 
