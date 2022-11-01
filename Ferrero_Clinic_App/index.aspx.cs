@@ -17,6 +17,8 @@ namespace Ferrero_Clinic_App
         protected void Page_Load(object sender, EventArgs e)
         {
             Response.Cookies.Clear();
+            string x = HttpContext.Current.Server.MapPath("~/Patients").ToString();
+            TextBox1.Text = x;
         }
 
         protected void Login_BTN_Click(object sender, EventArgs e)
