@@ -16,6 +16,7 @@ namespace Ferrero_Clinic_App
         SqlConnection con = new SqlConnection("Data Source =(LocalDB)\\MSSQLLocalDB; AttachDbFilename=|DataDirectory|\\Ferrero_DBM.mdf;Integrated Security = True;");
         protected void Page_Load(object sender, EventArgs e)
         {
+            Response.Cookies.Clear();
         }
 
         protected void Login_BTN_Click(object sender, EventArgs e)
@@ -44,6 +45,12 @@ namespace Ferrero_Clinic_App
                 }
                 if (bEqual)
                 {
+                    //creaitng a cookie 
+                    HttpCookie userCookie = new HttpCookie("userCookie");
+                    userCookie.Value = Username_Box.Text;
+                    userCookie.Expires = DateTime.Now.AddHours(3);
+                    Response.Cookies.Add(userCookie);
+                    
                     Response.Redirect("DC_Dash_Board.aspx");
                 }
             }

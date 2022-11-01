@@ -23,6 +23,20 @@ namespace Ferrero_Clinic_App
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Request.Cookies["userCookie"] != null)
+            {
+                HttpCookie cookieObj = Request.Cookies["userCookie"];
+                string cookieObj2 = Request.Cookies["userCookie"].Value;
+                string message = "alert('Login Successful! " + cookieObj2 + " , welcome!')";
+               // ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+
+            }
+            else
+            {
+                ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", "alert('No cookies :(');", true);
+                Response.Redirect("index.aspx");
+
+            }
 
         }
         /** The below code was taken form an online souce 
@@ -51,7 +65,8 @@ namespace Ferrero_Clinic_App
         }
         protected void Gen_btn_Click(object sender, EventArgs e)
         {
-            DataRow dr = GetData("SELECT * FROM Diagnosis WHERE Date_of_diagnosis BETWEEN '"+StartDate_cal.SelectedDate+"' AND '"+EndDate_cal.SelectedDate+"' AND Diagnosis= '" + Diagnosis_tb.Text + "'").Rows[0]; ;
+          //  DataRow dr = GetData("SELECT * FROM Diagnosis WHERE Date_of_diagnosis BETWEEN '"+StartDate_cal.SelectedDate+"' AND '"+EndDate_cal.SelectedDate+"' AND Diagnosis= '" + Diagnosis_tb.Text + "'").Rows[0]; ;
+            DataTable dt =  GetData("SELECT * FROM Diagnosis WHERE Date_of_diagnosis BETWEEN '"+StartDate_cal.SelectedDate+"' AND '"+EndDate_cal.SelectedDate+"' AND Diagnosis= '" + Diagnosis_tb.Text + "'");
             Document document = new Document(PageSize.A4, 88f, 88f, 10f, 10f);
             Font NormalFont = FontFactory.GetFont("Times New Roman", 12, Font.NORMAL, BaseColor.BLACK);
 
@@ -72,7 +87,7 @@ namespace Ferrero_Clinic_App
                 table.SetWidths(new float[] { 0.3f, 0.7f });
 
                 //Company Logo
-                iTextSharp.text.Image png = iTextSharp.text.Image.GetInstance("/ferrero_logo.png");
+                iTextSharp.text.Image png = iTextSharp.text.Image.GetInstance(HttpContext.Current.Server.MapPath("~/Images/ferrero_logo.png"));
                 PdfPCell imageCell = new PdfPCell(png);
                 imageCell.Colspan = 2; // either 1 if you need to insert one cell
                 imageCell.Border = 0;
@@ -111,47 +126,57 @@ namespace Ferrero_Clinic_App
                 cell.PaddingBottom = 30f;
                 table.AddCell(cell);
 
-               //Name
-                phrase = new Phrase();
-                phrase.Add(new Chunk(dr["Diagnosis"].ToString(), FontFactory.GetFont("Times New Roman", 10, Font.BOLD, BaseColor.BLACK)));
-                phrase.Add(new Chunk("(List of patients with the diagnosis)", FontFactory.GetFont("Times New Roman", 8, Font.BOLD, BaseColor.BLACK)));
-                cell = PhraseCell(phrase, PdfPCell.ALIGN_LEFT);
-                cell.VerticalAlignment = PdfPCell.ALIGN_MIDDLE;
-                table.AddCell(cell);
-                document.Add(table);
- 
-                DrawLine(writer, 160f, 80f, 160f, 690f, BaseColor.BLACK);
-                DrawLine(writer, 115f, document.Top - 200f, document.PageSize.Width - 100f, document.Top - 200f, BaseColor.BLACK);
- 
-                table = new PdfPTable(2);
-                table.SetWidths(new float[] { 0.5f, 2f });
-                table.TotalWidth = 340f;
-                table.LockedWidth = true;
-                table.SpacingBefore = 20f;
-                table.HorizontalAlignment = Element.ALIGN_RIGHT;
+                foreach (DataRow dr in dt.Rows)
+                {
+                    //Name
+                    phrase = new Phrase();
+                    phrase.Add(new Chunk(dr["Diagnosis"].ToString(), FontFactory.GetFont("Times New Roman", 10, Font.BOLD, BaseColor.BLACK)));
+                    phrase.Add(new Chunk("(List of patients with the diagnosis)", FontFactory.GetFont("Times New Roman", 8, Font.BOLD, BaseColor.BLACK)));
+                    cell = PhraseCell(phrase, PdfPCell.ALIGN_LEFT);
+                    cell.VerticalAlignment = PdfPCell.ALIGN_MIDDLE;
+                    table.AddCell(cell);
+                    document.Add(table);
 
+                    DrawLine(writer, 160f, 80f, 160f, 690f, BaseColor.BLACK);
+                    DrawLine(writer, 115f, document.Top - 200f, document.PageSize.Width - 100f, document.Top - 200f, BaseColor.BLACK);
 
-                //Patient Id
-                table.AddCell(PhraseCell(new Phrase("Patient ID:", FontFactory.GetFont("Times New Roman", 8, Font.BOLD, BaseColor.BLACK)), PdfPCell.ALIGN_LEFT));
-                table.AddCell(PhraseCell(new Phrase("" +dr["Patient_ID"], FontFactory.GetFont("Times New Roman", 8, Font.NORMAL, BaseColor.BLACK)), PdfPCell.ALIGN_LEFT));
-                cell = PhraseCell(new Phrase(), PdfPCell.ALIGN_CENTER);
-                cell.Colspan = 2;
-                cell.PaddingBottom = 10f;
-                table.AddCell(cell);
-                //Date of diagnosis
-                table.AddCell(PhraseCell(new Phrase("Date diagnosed:", FontFactory.GetFont("Times New Roman", 8, Font.BOLD, BaseColor.BLACK)), PdfPCell.ALIGN_LEFT));
-                table.AddCell(PhraseCell(new Phrase("" + dr["Date_of_diagnosis"], FontFactory.GetFont("Times New Roman", 8, Font.NORMAL, BaseColor.BLACK)), PdfPCell.ALIGN_LEFT));
-                cell = PhraseCell(new Phrase(), PdfPCell.ALIGN_CENTER);
-                cell.Colspan = 2;
-                cell.PaddingBottom = 10f;
-                table.AddCell(cell);
-                //Medication
-                table.AddCell(PhraseCell(new Phrase("Medication:", FontFactory.GetFont("Times New Roman", 8, Font.BOLD, BaseColor.BLACK)), PdfPCell.ALIGN_LEFT));
-                table.AddCell(PhraseCell(new Phrase("" + dr["Medication"], FontFactory.GetFont("Times New Roman", 8, Font.NORMAL, BaseColor.BLACK)), PdfPCell.ALIGN_LEFT));
-                cell = PhraseCell(new Phrase(), PdfPCell.ALIGN_CENTER);
-                cell.Colspan = 2;
-                cell.PaddingBottom = 10f;
-                table.AddCell(cell);
+                    table = new PdfPTable(2);
+                    table.SetWidths(new float[] { 0.5f, 2f });
+                    table.TotalWidth = 340f;
+                    table.LockedWidth = true;
+                    table.SpacingBefore = 20f;
+                    table.HorizontalAlignment = Element.ALIGN_RIGHT;
+
+                    //Diagnosis Name
+                    table.AddCell(PhraseCell(new Phrase("Diagnosis:", FontFactory.GetFont("Times New Roman", 8, Font.BOLD, BaseColor.BLACK)), PdfPCell.ALIGN_LEFT));
+                    table.AddCell(PhraseCell(new Phrase("" + dr["Diagnosis"], FontFactory.GetFont("Times New Roman", 8, Font.NORMAL, BaseColor.BLACK)), PdfPCell.ALIGN_LEFT));
+                    cell = PhraseCell(new Phrase(), PdfPCell.ALIGN_CENTER);
+                    cell.Colspan = 2;
+                    cell.PaddingBottom = 10f;
+                    table.AddCell(cell);
+
+                    //Patient Id
+                    table.AddCell(PhraseCell(new Phrase("Patient ID:", FontFactory.GetFont("Times New Roman", 8, Font.BOLD, BaseColor.BLACK)), PdfPCell.ALIGN_LEFT));
+                    table.AddCell(PhraseCell(new Phrase("" + dr["Patient_ID"], FontFactory.GetFont("Times New Roman", 8, Font.NORMAL, BaseColor.BLACK)), PdfPCell.ALIGN_LEFT));
+                    cell = PhraseCell(new Phrase(), PdfPCell.ALIGN_CENTER);
+                    cell.Colspan = 2;
+                    cell.PaddingBottom = 10f;
+                    table.AddCell(cell);
+                    //Date of diagnosis
+                    table.AddCell(PhraseCell(new Phrase("Date diagnosed:", FontFactory.GetFont("Times New Roman", 8, Font.BOLD, BaseColor.BLACK)), PdfPCell.ALIGN_LEFT));
+                    table.AddCell(PhraseCell(new Phrase("" + dr["Date_of_diagnosis"], FontFactory.GetFont("Times New Roman", 8, Font.NORMAL, BaseColor.BLACK)), PdfPCell.ALIGN_LEFT));
+                    cell = PhraseCell(new Phrase(), PdfPCell.ALIGN_CENTER);
+                    cell.Colspan = 2;
+                    cell.PaddingBottom = 10f;
+                    table.AddCell(cell);
+                    //Medication
+                    table.AddCell(PhraseCell(new Phrase("Medication:", FontFactory.GetFont("Times New Roman", 8, Font.BOLD, BaseColor.BLACK)), PdfPCell.ALIGN_LEFT));
+                    table.AddCell(PhraseCell(new Phrase("" + dr["Medication"], FontFactory.GetFont("Times New Roman", 8, Font.NORMAL, BaseColor.BLACK)), PdfPCell.ALIGN_LEFT));
+                    cell = PhraseCell(new Phrase(), PdfPCell.ALIGN_CENTER);
+                    cell.Colspan = 2;
+                    cell.PaddingBottom = 10f;
+                    table.AddCell(cell);
+                }
 
                 document.Add(table);
                 document.Close();
