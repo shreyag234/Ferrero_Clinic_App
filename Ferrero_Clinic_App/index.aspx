@@ -63,9 +63,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style3">
-                    <asp:TextBox ID="TextBox1" runat="server" Width="678px"></asp:TextBox>
-                </td>
+                <td class="auto-style3">&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
