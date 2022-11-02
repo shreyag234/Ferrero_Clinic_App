@@ -42,6 +42,15 @@ namespace Ferrero_Clinic_App
         protected global::System.Web.UI.WebControls.Button Veiw_Patient_BTN;
 
         /// <summary>
+        /// Add_appointment_BTN control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Add_appointment_BTN;
+
+        /// <summary>
         /// Generate_Report_BTN control.
         /// </summary>
         /// <remarks>

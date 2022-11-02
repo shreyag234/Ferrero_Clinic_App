@@ -27,7 +27,8 @@
                          runat="server" ControlToValidate ="Diagnosis_tb"
                          ErrorMessage="Please provide the diagnosis" ForeColor="DarkRed" Display="Dynamic" CssClass="display-next"></asp:RequiredFieldValidator>
              </tr>
-         <tr height="20dp"></tr>&nbsp;</td>
+         <tr height="20dp"></tr>
+&nbsp;</td>
                 <td width="20dp"><asp:Label ID="Daterange_LB" runat="server" Text="Date Range: " Font-Size="Larger"></asp:Label></td>
                 <td width="20dp"> <asp:Calendar ID="StartDate_cal" runat="server"  DayHeaderStyle-Font-Size="Medium" Width="10px"></asp:Calendar></td>
                 <td width="20dp"></td>

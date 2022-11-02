@@ -48,5 +48,10 @@ namespace Ferrero_Clinic_App
         {
             Response.Redirect("View_Reports.aspx");
         }
+
+        protected void Add_appointment_BTN_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Appointment.aspx");
+        }
     }
 }
