@@ -22,6 +22,22 @@
         .auto-style5 {
             width: 128px;
         }
+        .auto-style8 {
+            width: 279px;
+            height: 70px;
+        }
+        .auto-style9 {
+            width: 314px;
+            height: 70px;
+        }
+        .auto-style10 {
+            width: 210px;
+            height: 70px;
+        }
+        .auto-style11 {
+            width: 128px;
+            height: 70px;
+        }
     </style>
 </head>
 <body>
@@ -30,17 +46,26 @@
         </div>
         <table class="auto-style1">
             <tr>
-                <td class="auto-style2">
+                <td class="auto-style8">
                     <asp:Label ID="Please_Enter_LB01" runat="server" Text="Enter Patient ID Number:"></asp:Label>
                 </td>
-                <td class="auto-style3">
+                <td class="auto-style9">
                     <asp:TextBox ID="ID_Number_TB01" runat="server" Width="156px" OnTextChanged="TextChanged" ></asp:TextBox>
                 </td>
-                <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style5">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style10"></td>
+                <td class="auto-style11"></td>
+                <td rowspan="13">
+                  
+                        <asp:GridView ID="gvDetails" CellPadding="5" runat="server" AutoGenerateColumns="False" OnRowCommand="GridView1_RowCommand">
+                        <Columns>
+                        <asp:BoundField DataField="Text" HeaderText="Patient Documents" />
+
+                            <asp:ButtonField Text="Download" />
+
+                        </Columns>
+                        <HeaderStyle BackColor="#df5015" Font-Bold="true" ForeColor="White" />
+                        </asp:GridView>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style2">
@@ -55,9 +80,6 @@
                 <td class="auto-style5">
                     <asp:TextBox ID="P_Phone_TB01" runat="server" Width="156px" Visible="false" OnTextChanged="TextChanged" ></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">
@@ -72,9 +94,6 @@
                 <td class="auto-style5">
                     <asp:TextBox ID="P_Email_TB01" runat="server" Width="156px" Visible="false" OnTextChanged="TextChanged" ></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">
@@ -89,9 +108,6 @@
                 <td class="auto-style5">
                     <asp:TextBox ID="P_Occupation_TB01" runat="server" Width="156px" Visible="false" OnTextChanged="TextChanged" ></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">
@@ -106,9 +122,6 @@
                 <td class="auto-style5">
                     <asp:TextBox ID="P_Employer_TB01" runat="server" Width="156px" Visible="false" OnTextChanged="TextChanged" ></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">
@@ -123,11 +136,6 @@
                 <td class="auto-style5">
                     <asp:TextBox ID="P_M_Stat_TB01" runat="server" Width="156px" Visible="false" OnTextChanged="TextChanged"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
-                <td>
-                    <asp:TextBox ID="test_box" runat="server" Visible ="false"></asp:TextBox>
-                </td>
-                <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">
@@ -142,9 +150,6 @@
                 <td class="auto-style5">
                     <asp:TextBox ID="P_SP_F_Name_TB01" runat="server" Width="156px" Visible="false" OnTextChanged="TextChanged"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">
@@ -159,9 +164,6 @@
                 <td class="auto-style5">
                     <asp:TextBox ID="P_Gender_TB01" runat="server" Width="156px" Visible="false" OnTextChanged="TextChanged"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">
@@ -172,9 +174,6 @@
                 </td>
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style5">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">
@@ -189,9 +188,6 @@
                 <td class="auto-style5">
                     <asp:TextBox ID="P_E_Cont_Phone_TB01" runat="server" Width="156px" Visible="false" OnTextChanged="TextChanged"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">
@@ -202,18 +198,14 @@
                 </td>
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style5">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style3">
+                    <asp:TextBox ID="test_box" runat="server" Visible ="false" Width="23px"></asp:TextBox>
+                </td>
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style5">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">
@@ -225,9 +217,6 @@
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style5">
                     &nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
             </tr>
         </table>
     </form>

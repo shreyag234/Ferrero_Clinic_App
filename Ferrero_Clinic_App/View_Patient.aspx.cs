@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -12,7 +13,7 @@ namespace Ferrero_Clinic_App
     public partial class View_Patient : System.Web.UI.Page
     {
         SqlConnection con = new SqlConnection("Data Source =(LocalDB)\\MSSQLLocalDB; AttachDbFilename=|DataDirectory|\\Ferrero_DBM.mdf;Integrated Security = True;");
-
+        List<ListItem> files = new List<ListItem>();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Request.Cookies["userCookie"] != null)
@@ -97,13 +98,24 @@ namespace Ferrero_Clinic_App
                 PM_Name_LB01.Visible = true;
                 PM_Name_TB01.Visible = true;
                 PM_Name_TB01.Text = rdr["Maiden_Name"].ToString();
+
+                string[] filesPath = Directory.GetFiles(HttpContext.Current.Server.MapPath("~/Patients/").ToString() + ID_Number_TB01.Text);
+                
+                foreach (string path in filesPath)
+                {
+                    files.Add(new ListItem(Path.GetFileName(path)));
+                }
+                gvDetails.DataSource = files;
+                
+                gvDetails.DataBind();
             }
 
 
         }
 
+        
 
-
+        
         protected void Update_BTN01_Click(object sender, EventArgs e)
         {
 
@@ -152,6 +164,20 @@ namespace Ferrero_Clinic_App
         {
             Update_BTN01.Visible = true;
         }
+        protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            
+            string id = (string)e.CommandArgument;
+
+            string x = gvDetails.Rows[Convert.ToInt32(id)].Cells[0].Text;
+          
+
+            Response.ContentType = "application/pdf";
+            Response.AppendHeader("Content-Disposition", "attachment; filename="+x);
+            Response.TransmitFile(HttpContext.Current.Server.MapPath("~/Patients/").ToString()+ID_Number_TB01.Text+"/"+x);
+            Response.End();
+
+        }
     }
-}
+    }
 
