@@ -166,6 +166,7 @@
     <Content Include="New_User.aspx" />
     <Content Include="Reports.aspx" />
     <Content Include="View_Patient.aspx" />
+    <Content Include="View_Reports.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -232,6 +233,13 @@
     </Compile>
     <Compile Include="View_Patient.aspx.designer.cs">
       <DependentUpon>View_Patient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View_Reports.aspx.cs">
+      <DependentUpon>View_Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View_Reports.aspx.designer.cs">
+      <DependentUpon>View_Reports.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
