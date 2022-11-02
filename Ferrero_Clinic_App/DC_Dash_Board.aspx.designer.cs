@@ -51,6 +51,15 @@ namespace Ferrero_Clinic_App
         protected global::System.Web.UI.WebControls.Button Generate_Report_BTN;
 
         /// <summary>
+        /// View_Past_Reports control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button View_Past_Reports;
+
+        /// <summary>
         /// Veiw_Calandar_BTN control.
         /// </summary>
         /// <remarks>

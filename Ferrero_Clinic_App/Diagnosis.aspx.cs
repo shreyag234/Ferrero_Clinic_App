@@ -19,7 +19,7 @@ namespace Ferrero_Clinic_App
                 HttpCookie cookieObj = Request.Cookies["userCookie"];
                 string cookieObj2 = Request.Cookies["userCookie"].Value;
                 string message = "alert('Login Successful! " + cookieObj2 + " , welcome!')";
-                ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+               // ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
 
             }
             else

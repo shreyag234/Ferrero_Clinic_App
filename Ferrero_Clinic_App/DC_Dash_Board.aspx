@@ -58,6 +58,9 @@
                 <td class="auto-style5">
                     <asp:Button ID="Generate_Report_BTN" runat="server" Text="Generate A Report" OnClick="Generate_Report_BTN_Click" />
                 </td>
+                <td class="auto-style5">
+                    <asp:Button ID="View_Past_Reports" runat="server" Text="View Past Report" OnClick="View_Past_Reports_Click"/>
+                </td>
                 <td class="auto-style6">
                     <asp:Button ID="Veiw_Calandar_BTN" runat="server" Text="Veiw Upcoming Apointments" Width="351px" />
                 </td>
