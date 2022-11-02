@@ -38,6 +38,9 @@
             width: 128px;
             height: 70px;
         }
+        .auto-style12 {
+            margin-bottom: 0px;
+        }
     </style>
 </head>
 <body>
@@ -56,7 +59,9 @@
                 <td class="auto-style11"></td>
                 <td rowspan="13">
                   
-                        <asp:GridView ID="gvDetails" CellPadding="5" runat="server" AutoGenerateColumns="False" OnRowCommand="GridView1_RowCommand">
+                        
+                  
+                        <asp:GridView ID="gvDetails" CellPadding="5" runat="server" AutoGenerateColumns="False" OnRowCommand="GridView1_RowCommand" CssClass="auto-style12">
                         <Columns>
                         <asp:BoundField DataField="Text" HeaderText="Patient Documents" />
 
@@ -65,6 +70,10 @@
                         </Columns>
                         <HeaderStyle BackColor="#df5015" Font-Bold="true" ForeColor="White" />
                         </asp:GridView>
+                    <br />
+                    <asp:FileUpload ID="FileUpload1" runat="server" />
+                    <br />
+                    <asp:Button ID="Upload" runat="server" Text="Upload" OnClick="UploadBtn_Click"/>
                 </td>
             </tr>
             <tr>

@@ -51,6 +51,24 @@ namespace Ferrero_Clinic_App
         protected global::System.Web.UI.WebControls.GridView gvDetails;
 
         /// <summary>
+        /// FileUpload1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
+
+        /// <summary>
+        /// Upload control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Upload;
+
+        /// <summary>
         /// PF_Name_LB01 control.
         /// </summary>
         /// <remarks>

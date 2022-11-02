@@ -178,6 +178,30 @@ namespace Ferrero_Clinic_App
             Response.End();
 
         }
+
+        protected void UploadBtn_Click(object sender, EventArgs e)
+        {
+            if (FileUpload1.HasFile)
+            {
+
+                FileUpload1.SaveAs(HttpContext.Current.Server.MapPath("~/Patients/").ToString() + ID_Number_TB01.Text + "/" + FileUpload1.FileName);
+                
+            }
+            else
+            {
+               
+            }
+            string[] filesPath = Directory.GetFiles(HttpContext.Current.Server.MapPath("~/Patients/").ToString() + ID_Number_TB01.Text);
+
+            foreach (string path in filesPath)
+            {
+                files.Add(new ListItem(Path.GetFileName(path)));
+            }
+            gvDetails.DataSource = files;
+
+            gvDetails.DataBind();
+        }
+
     }
-    }
+}
 
