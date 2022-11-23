@@ -53,5 +53,10 @@ namespace Ferrero_Clinic_App
             Response.End();
 
         }
+
+        protected void Back_BTN_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DC_Dash_Board.aspx");
+        }
     }
 }

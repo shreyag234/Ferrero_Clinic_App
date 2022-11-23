@@ -8,22 +8,22 @@ using System.Web.UI.WebControls;
 
 namespace Ferrero_Clinic_App
 {
+    
     public partial class Appointment : System.Web.UI.Page
     {
         SqlConnection con = new SqlConnection("Data Source =(LocalDB)\\MSSQLLocalDB; AttachDbFilename=|DataDirectory|\\Ferrero_DBM.mdf;Integrated Security = True;");
+        
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             if (Request.Cookies["userCookie"] != null)
             {
                 HttpCookie cookieObj = Request.Cookies["userCookie"];
                 string cookieObj2 = Request.Cookies["userCookie"].Value;
                 string message = "alert('Login Successful! " + cookieObj2 + " , welcome!')";
-
-                List<string> query = Enumerable.Range(0, 40).Select(i =>
-                 DateTime.Today.AddHours(7).AddMinutes(i * 15).ToString("HH:mm")).ToList();
-                Time_List.DataSource = query;
-                Time_List.DataBind();
+                
+                
             }
             else
             {
@@ -42,12 +42,16 @@ namespace Ferrero_Clinic_App
 
             cmd.Parameters.AddWithValue("@Patient_ID", ID_tb.Text);
             cmd.Parameters.AddWithValue("@Appointment_Date", DatetoBook_cal.SelectedDate);
-            cmd.Parameters.AddWithValue("@Appointment_Time", Time_List.SelectedValue.ToString());
+            cmd.Parameters.AddWithValue("@Appointment_Time", Time_List.SelectedValue);
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Appointment Booked!');", true);
+           
+        }
 
+        protected void back_btn0_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DC_Dash_Board.aspx");
         }
     }
 }

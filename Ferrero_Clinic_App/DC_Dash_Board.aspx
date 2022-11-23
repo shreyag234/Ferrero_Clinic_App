@@ -65,7 +65,10 @@
                     <asp:Button ID="View_Past_Reports" runat="server" Text="View Past Report" OnClick="View_Past_Reports_Click"/>
                 </td>
                 <td class="auto-style6">
-                    <asp:Button ID="Veiw_Calandar_BTN" runat="server" Text="Veiw Upcoming Apointments" Width="351px" />
+                    <asp:Button ID="Veiw_Calandar_BTN" runat="server" Text="Veiw Upcoming Apointments" Width="351px" OnClick="Veiw_Calandar_BTN_Click" />
+                </td>
+                <td class="auto-style5">
+                    <asp:Button ID="Diagnosis_BTN" runat="server" Text="Add Diagnosis" OnClick="Diagnosis_BTN_Click"  />
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -73,7 +76,9 @@
                 <td class="auto-style3">&nbsp;</td>
                 <td class="auto-style7">&nbsp;</td>
                 <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style5">
+                    <asp:Button ID="LogOUT_btn" runat="server" Text="Log Out" Width="168px" OnClick="LogOUT_btn_Click" />
+                </td>
                 <td class="auto-style6">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>

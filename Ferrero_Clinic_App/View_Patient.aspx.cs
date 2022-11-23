@@ -52,7 +52,7 @@ namespace Ferrero_Clinic_App
                 PS_Name_TB01.Text = rdr["Patient_Surname"].ToString();
                 P_DOB_LB01.Visible = true;
                 P_DOB_TB01.Visible = true;
-                P_DOB_TB01.Text = rdr["DOB"].ToString().Substring(0, 10);
+                P_DOB_TB01.Text = rdr["DOB"].ToString().Substring(0, 9);
                 P_Add_LB01.Visible = true;
                 P_Add_TB01.Visible = true;
                 P_Add_TB01.Text = rdr["Street"].ToString();
@@ -202,6 +202,10 @@ namespace Ferrero_Clinic_App
             gvDetails.DataBind();
         }
 
+        protected void Back_BTN_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DC_Dash_Board.aspx");
+        }
     }
 }
 

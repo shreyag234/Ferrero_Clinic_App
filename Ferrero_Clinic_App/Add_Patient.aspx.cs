@@ -79,6 +79,9 @@ namespace Ferrero_Clinic_App
             Response.Redirect("Medical_History.aspx");
         }
 
-
+        protected void Back_btn0_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DC_Dash_Board.aspx");
+        }
     }
 }

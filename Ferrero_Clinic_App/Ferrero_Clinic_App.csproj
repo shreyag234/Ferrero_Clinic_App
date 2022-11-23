@@ -159,6 +159,7 @@
     <Content Include="App_Data\Ferrero_DBM_log.ldf">
       <DependentUpon>Ferrero_DBM.mdf</DependentUpon>
     </Content>
+    <Content Include="Archive_Patient.aspx" />
     <Content Include="DC_Dash_Board.aspx" />
     <Content Include="Diagnosis.aspx" />
     <Content Include="Images\ferrero_logo.png" />
@@ -192,6 +193,13 @@
     </Compile>
     <Compile Include="Appointment.aspx.designer.cs">
       <DependentUpon>Appointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Archive_Patient.aspx.cs">
+      <DependentUpon>Archive_Patient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Archive_Patient.aspx.designer.cs">
+      <DependentUpon>Archive_Patient.aspx</DependentUpon>
     </Compile>
     <Compile Include="DC_Dash_Board.aspx.cs">
       <DependentUpon>DC_Dash_Board.aspx</DependentUpon>

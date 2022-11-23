@@ -37,7 +37,7 @@
              </tr>
          <tr>
                 <td width="20dp">&nbsp;</td>
-                <td width="20dp"></td>
+                <td width="20dp"><asp:Button ID="Back_BTN" runat="server" Text="Back" Font-Bold="true" Font-Size="Larger" Width="150px" Style="float: right" OnClick="Back_BTN_Click"/></td>
                 <td width="20dp"></td>
                 <td width="20dp">
                     <asp:Button ID="Gen_btn" runat="server" Text="Generate" Font-Bold="true" Font-Size="Larger" Width="150px" Style="float: right" OnClick="Gen_btn_Click"/></td>

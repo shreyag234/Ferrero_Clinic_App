@@ -18,7 +18,7 @@ namespace Ferrero_Clinic_App
                 string cookieObj2 = Request.Cookies["userCookie"].Value;
                 string message = "alert('Login Successful! " + cookieObj2 + " , welcome!')";
                // ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
-
+               
             }
             else
             {
@@ -52,6 +52,42 @@ namespace Ferrero_Clinic_App
         protected void Add_appointment_BTN_Click(object sender, EventArgs e)
         {
             Response.Redirect("Appointment.aspx");
+        }
+
+        protected void LogOUT_btn_Click(object sender, EventArgs e)
+        {
+            if (HttpContext.Current != null)
+            {
+                int cookieCount = HttpContext.Current.Request.Cookies.Count;
+                for (var i = 0; i < cookieCount; i++)
+                {
+                    var cookie = HttpContext.Current.Request.Cookies[i];
+                    if (cookie != null)
+                    {
+                        var expiredCookie = new HttpCookie(cookie.Name)
+                        {
+                            Expires = DateTime.Now.AddDays(-1),
+                            Domain = cookie.Domain
+                        };
+                        HttpContext.Current.Response.Cookies.Add(expiredCookie); // overwrite it
+                    }
+                }
+
+                // clear cookies server side
+                HttpContext.Current.Request.Cookies.Clear();
+            }
+            Response.Redirect("index.aspx");
+
+        }
+
+        protected void Diagnosis_BTN_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Diagnosis.aspx");
+        }
+
+        protected void Veiw_Calandar_BTN_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("View_Appointments.aspx");
         }
     }
 }

@@ -217,6 +217,9 @@
                 <td class="auto-style5">&nbsp;</td>
             </tr>
             <tr>
+                 <td class="auto-style2">
+                    <asp:Button ID="Back_BTN" runat="server" Text="Back" Width="100px" OnClick="Back_BTN_Click" />
+                </td>
                 <td class="auto-style2">
                     <asp:Button ID="Search_BTN_01" runat="server" Text="Search" Width="129px" OnClick="Search_BTN_01_Click" />
                 </td>

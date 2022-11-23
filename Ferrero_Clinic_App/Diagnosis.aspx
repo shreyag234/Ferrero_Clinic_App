@@ -51,8 +51,8 @@
             <tr height="20dp"></tr>
             <tr height="20dp">
                 <td width="20dp">&nbsp;</td>
-                <td width="20dp">&nbsp;</td>
                 <td width="20dp"></td>
+                <td width="20dp"><asp:Button ID="Back_BTN" runat="server" Text="Back" Width="100px" Font-Bold="true" Font-Size="Larger" CssClass="auto-style5" OnClick="Back_BTN_Click1"/></td>
                 <td width="20dp">
                     <asp:Button ID="Next_btn" runat="server" Text="Next" Font-Bold="true" Font-Size="Larger" Width="150px" Style="float: right" OnClick="Next_btn_Click" /></td>
                 <td width="20dp"></td>

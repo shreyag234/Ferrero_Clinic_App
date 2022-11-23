@@ -18,7 +18,18 @@
                         </Columns>
                         <HeaderStyle BackColor="#df5015" Font-Bold="true" ForeColor="White" />
                         </asp:GridView>
+
         </div>
+        <table>
+            <tr height="20dp"></tr>
+            <tr>
+                <td height="20dp"></td>
+                <td>
+                    <asp:Button ID="Back_BTN" runat="server" Text="Back" Width="100px" OnClick="Back_BTN_Click"/>
+                </td>
+                
+            </tr>
+        </table>
     </form>
 </body>
 </html>

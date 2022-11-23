@@ -75,7 +75,7 @@
             <tr>
                 <td class="auto-style3">&nbsp;</td>
                 <td class="auto-style2">
-                    <asp:Button ID="Back_BTN" runat="server" Text="Back" Width="202px" />
+                    <asp:Button ID="Back_BTN" runat="server" Text="Log Out" Width="202px" OnClick="Back_BTN_Click" />
                 </td>
                 <td class="auto-style4">
                     <asp:Button ID="Add_BTN" runat="server" Text="Add" Width="173px" OnClick="Add_BTN_Click" />

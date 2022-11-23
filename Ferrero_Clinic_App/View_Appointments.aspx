@@ -11,7 +11,14 @@
         <div>
 
         </div>
-        <asp:GridView ID="Appointment_Grid" runat="server"></asp:GridView>
+        <asp:GridView ID="Appointment_Grid" runat="server" Width="300px" Height="200px"></asp:GridView>
+        <table>
+            <tr height="20dp"></tr>
+            <tr>
+                <td><asp:Button ID="Back_BTN" runat="server" Text="Back" Font-Bold="true" Font-Size="Larger" Width="100px" Style="float: right" OnClick="Back_BTN_Click"/></td>
+            </tr>
+        </table>
+        
     </form>
 </body>
 

@@ -222,24 +222,22 @@
                 <td widht="20dp"></td>
                 <td widht="20dp"></td>
                 <td widht="20dp">
-                    &nbsp;</td>
-                <td widht="20dp" class="auto-style1">&nbsp;</td>
+                &nbsp;</td>
                 <td widht="20dp" class="auto-style2"></td>
                 <td widht="20dp"></td>
                 <td widht="20dp"></td>
                 <td widht="20dp"></td>
-                <td widht="20dp" class="auto-style3"></td>
-                <td width="20dp">
-                    &nbsp;</td>
+                <td widht="20dp" class="auto-&nbsp;</td>
             </tr>
             
         </table>
         <table style="margin-left:auto;margin-right:auto;" >
             <tr>
-                <td widht="400dp" class="auto-style8"></td>
+                <td widht="400dp" class="auto-style8">
+                    <asp:Button ID="Back_btn0" runat="server" Text="Back" Width="244px" Font-Bold="true" Font-Size="Larger" CssClass="auto-style5" OnClick="Back_btn0_Click" /></td>
                 <td widht="400dp" class="auto-style7">
                     <asp:Button ID="Next_btn" runat="server" Text="Next" Width="244px" Font-Bold="true" Font-Size="Larger" CssClass="auto-style5" OnClick="Next_btn_Click" /></td>
-                <td widht="400dp" class="auto-style4"></td>
+                <td widht="400dp" class="auto-style4">&nbsp;</td>
             </tr>
         </table>
     </form>

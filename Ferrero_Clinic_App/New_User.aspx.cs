@@ -102,6 +102,9 @@ namespace Ferrero_Clinic_App
             }
         }
 
-
+        protected void Back_BTN_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("index.aspx");
+        }
     }
 }

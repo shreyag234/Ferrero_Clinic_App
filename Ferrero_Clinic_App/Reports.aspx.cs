@@ -217,5 +217,10 @@ namespace Ferrero_Clinic_App
             cell.PaddingTop = 0f;
             return cell;
         }
+
+        protected void Back_BTN_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DC_Dash_Board.aspx");
+        }
     }
 }

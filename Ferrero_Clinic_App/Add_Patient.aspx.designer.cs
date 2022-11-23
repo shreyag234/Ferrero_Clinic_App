@@ -510,6 +510,15 @@ namespace Ferrero_Clinic_App
         protected global::System.Web.UI.WebControls.RequiredFieldValidator validate3;
 
         /// <summary>
+        /// Back_btn0 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Back_btn0;
+
+        /// <summary>
         /// Next_btn control.
         /// </summary>
         /// <remarks>
